@@ -1,0 +1,170 @@
+'use client'
+
+import { Instagram, Twitter, Linkedin, ArrowRight, MoveDown } from 'lucide-react';
+import { motion } from "framer-motion";
+import { useEffect, useState } from 'react';
+{/* <h2 className="text-[60px] md:text-[85px] font-light leading-[1.1] tracking-tight text-white/90">
+              𝔼𝕩𝕡𝕖𝕣𝕚𝕖𝕟𝕔𝕖𝕤
+            </h2> */}
+
+const HeroSection = () => {
+  return (
+    <section className="relative w-full h-screen min-h-200 overflow-hidden bg-black flex items-center">
+      {/* Background Image / Fluid Art */}
+      <div className="absolute inset-0 z-0 select-none">
+        <img className="object-cover object-right lg:object-center opacity-80" sizes="100vw" src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2d3bbd90-100a-47bc-baf1-41d6af3aae13-appsians-com/assets/images/1633027720quinheader-13.webp" alt="" />
+        <div className="absolute inset-0 bg-[#00000000]" />
+      </div>
+
+      <div className="container relative z-10 px-6 lg:px-12 mx-auto">
+        <div className="max-w-175 space-y-8">
+          {/* Headline Section */}
+          <div className="animate-in fade-in slide-in-from-bottom-5 duration-1000">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <h1 className="text-[60px] md:text-[85px] font-extrabold leading-[1.1] tracking-tight text-white mb-2">
+                Crafting Digital
+              </h1>
+
+              <TypingText />
+            </motion.div>
+          </div>
+
+          {/* Descriptive Text */}
+          <div className="animate-in fade-in slide-in-from-bottom-7 duration-1000 delay-200">
+            <p className="text-[16px] md:text-[18px] text-[#B0B0B0] leading-[1.6] max-w-160">
+              We help brands <strong className="text-white font-semibold">achieve their goals</strong> through innovative and creative web and mobile applications, as well as digital marketing services. We have helped numerous brands achieve over <strong className="text-white font-semibold">$10M in annual revenue</strong> through our <strong className="text-white font-semibold">effective and proven solutions</strong>. Let us help <strong className="text-white font-semibold">grow your company</strong> to new heights.
+            </p>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap gap-4 pt-4 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-500">
+            <a
+              href="/Contact"
+              className="inline-flex items-center justify-between gap-3 px-8 py-4 rounded-full border border-white text-white font-medium text-sm transition-all duration-300 hover:bg-white hover:text-black group min-w-45"
+            >
+              Get in touch
+              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </a>
+            <a
+              href="/About"
+              className="inline-flex items-center justify-between gap-3 px-8 py-4 rounded-full border border-white text-white font-medium text-sm transition-all duration-300 hover:bg-white hover:text-black group min-w-45"
+            >
+              About us
+              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Side Social Media Links */}
+      <div className="absolute left-22 bottom-10 hidden lg:block z-20 animate-in fade-in duration-1000 delay-700">
+        <ul className="flex gap-6">
+          <li className='border border-white rounded-full p-2'>
+            <a 
+              href="https://www.instagram.com/afa_innovations?igsh=MWVwbW1qOHZkOGJjag==" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white hover:opacity-70 transition-opacity"
+            >
+              <Instagram className="w-5 h-5" />
+              <span className="sr-only">Instagram</span>
+            </a>
+          </li>
+          <li className='border border-white rounded-full p-2'>
+            <a 
+              href="https://twitter.com/mianasadali" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white hover:opacity-70 transition-opacity"
+            >
+              <Twitter className="w-5 h-5" />
+              <span className="sr-only">Twitter</span>
+            </a>
+          </li>
+          <li className='border border-white rounded-full p-2'>
+            <a 
+              href="https://www.linkedin.com/company/appsians/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white hover:opacity-70 transition-opacity"
+            >
+              <Linkedin className="w-5 h-5" />
+              <span className="sr-only">LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Scroll Down Indicator */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce cursor-pointer">
+        <a href="#clients-section" className="text-white/40 hover:text-white transition-colors">
+          <MoveDown className="w-6 h-6" />
+        </a>
+      </div>
+    </section>
+  );
+};
+
+function useTypingEffect(
+  words: string[],
+  typingSpeed = 80,
+  deletingSpeed = 50,
+  pauseTime = 1500
+) {
+  const [text, setText] = useState("");
+  const [wordIndex, setWordIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentWord = words[wordIndex];
+    let timeout: NodeJS.Timeout;
+
+    if (!isDeleting && text.length < currentWord.length) {
+      timeout = setTimeout(
+        () => setText(currentWord.slice(0, text.length + 1)),
+        typingSpeed
+      );
+    } else if (!isDeleting && text.length === currentWord.length) {
+      timeout = setTimeout(() => setIsDeleting(true), pauseTime);
+    } else if (isDeleting && text.length > 0) {
+      timeout = setTimeout(
+        () => setText(currentWord.slice(0, text.length - 1)),
+        deletingSpeed
+      );
+    } else if (isDeleting && text.length === 0) {
+      setIsDeleting(false);
+      setWordIndex((prev) => (prev + 1) % words.length);
+    }
+
+    return () => clearTimeout(timeout);
+  }, [text, isDeleting, wordIndex]);
+
+  return text;
+}
+
+function TypingText() {
+  const typedText = useTypingEffect(
+    ["Experiences", "Products", "Interfaces"],
+    80,
+    50,
+    1200
+  );
+
+  return (
+    <motion.h2
+      className="text-[60px] md:text-[85px] font-light leading-[1.1] tracking-tight text-white/90"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+    >
+      {typedText}
+      <span className="animate-pulse ml-1">|</span>
+    </motion.h2>
+  );
+}
+
+export default HeroSection;
