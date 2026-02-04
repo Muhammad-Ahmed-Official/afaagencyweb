@@ -35,7 +35,7 @@ export default function PortfolioSection() {
             Selected works
           </h4>
           <h3 className="text-[48px] font-bold text-white leading-tight" style={{ fontSize: '48px', fontWeight: 700 }}>
-            Our <span className="text-white">premium</span> projects.
+            Our projects.
           </h3>
         </div>
 

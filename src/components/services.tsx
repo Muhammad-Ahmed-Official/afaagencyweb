@@ -7,13 +7,13 @@ import { useRef, useState, useEffect } from "react";
 const services = [
   {
     title: 'Web Development',
-    description: 'Need a new website? Our team of experienced web developers can bring your vision to life with custom design and functionality. Contact us for a quote today!',
+    description: 'Stop building static sites and start deploying Intelligence. AFA Innovations specializes in Venture-Ready Web Development integrated with Autonomous AI Agents!',
     icon: <Crown className="w-5 h-5 text-white mr-2 inline" />,
     image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1632922319quin-service1-9.webp',
   },
   {
-    title: 'SEO Solutions',
-    description: "Maximize your online presence with our SEO services. We'll help increase your visibility and drive traffic to your website through targeted keyword optimization.",
+    title: 'AI Solutions',
+    description: "Elevate your digital presence with Serverless Web Architecture and AI Integration. With a decade of expertise, AFA Innovations delivers custom designs, predictive analytics, and fine-tuned AI solutions to bring your digital vision to life. Request your quote today.",
     icon: <Search className="w-5 h-5 text-white mr-2 inline" />,
     image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1632922118quin-service2-10.webp',
   },
@@ -23,18 +23,18 @@ const services = [
     icon: <Smartphone className="w-5 h-5 text-white mr-2 inline" />,
     image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1632921978quin-service-webdesign1-11.webp',
   },
-  {
-    title: 'Machine Learning',
-    description: 'Transform your business with the power of machine learning. Our team of experts will help you tap into the potential of predictive analytics and intelligent automation.',
-    icon: <Cpu className="w-5 h-5 text-white mr-2 inline" />,
-    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1673048347machine-learning_20_1_-12.png',
-  },
-  {
-    title: 'Networking',
-    description: 'Ensure your business runs smoothly with our networking and server administration solutions. Our experienced professionals will optimize and secure your systems.',
-    icon: <Globe className="w-5 h-5 text-white mr-2 inline" />,
-    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1673048485computer_networking_20_1_-13.jpg',
-  },
+  // {
+  //   title: 'Machine Learning',
+  //   description: 'Transform your business with the power of machine learning. Our team of experts will help you tap into the potential of predictive analytics and intelligent automation.',
+  //   icon: <Cpu className="w-5 h-5 text-white mr-2 inline" />,
+  //   image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1673048347machine-learning_20_1_-12.png',
+  // },
+  // {
+  //   title: 'Networking',
+  //   description: 'Ensure your business runs smoothly with our networking and server administration solutions. Our experienced professionals will optimize and secure your systems.',
+  //   icon: <Globe className="w-5 h-5 text-white mr-2 inline" />,
+  //   image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1673048485computer_networking_20_1_-13.jpg',
+  // },
 ];
 
 const ServicesSection = () => {
@@ -127,13 +127,14 @@ const ServicesSection = () => {
     <section className="services-section py-25 bg-linear-to-r from-[#06080f] via-[#0d1630] to-[#06080f] text-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="mb-12 md:mb-16">
-          <h3 className="text-3xl md:text-[48px] font-bold mb-4 text-center">
-            How can <span className="text-white">we help?</span>
+          <h3 className="text-3xl md:text-[36px] font-bold mb-4 text-center">
+            How We <span className="text-white">Architect Your Success?</span>
           </h3>
           <div className="description-services max-w-3xl mx-auto px-4">
-            <p className="text-base md:text-[18px] leading-[1.6] text-center md:text-justify text-muted-foreground">
-              Our software development company is dedicated to providing innovative solutions that help businesses of all sizes thrive. From <strong>custom web and mobile app development to AI technologies</strong>, we have the expertise and resources to turn your <strong>vision into a reality</strong>.
-            </p>
+           <p className="text-base md:text-[18px] leading-[1.6] text-center md:text-justify text-muted-foreground">
+  At AFA Innovations, we don’t just build software; we engineer growth engines. Our mission is to bridge the gap between complex business challenges and the <strong>$376 billion AI-driven economy</strong>. By merging elite Web and Mobile Development with custom Applied AI, we turn your strategic vision into a high-performance digital reality.
+</p>
+
           </div>
         </div>
 
@@ -181,7 +182,7 @@ const ServicesSection = () => {
                       {service.icon} {service.title}
                     </h4>
                     <p className="text-[15px] text-muted-foreground grow">{service.description}</p>
-                    <a href="/contact" className="mt-4 inline-flex items-center gap-2 font-medium text-[15px] hover:text-white transition-all group">
+                    <a href="/Contact" className="mt-4 inline-flex items-center gap-2 font-medium text-[15px] hover:text-white transition-all group">
                       Let's Start <span className="group-hover:translate-x-1 transition-transform">→</span>
                     </a>
                   </div>
@@ -264,7 +265,7 @@ const ServicesSection = () => {
                   {services[currentIndex].description}
                 </p>
                 <a 
-                  href="/contact" 
+                  href="/Contact" 
                   className="inline-flex items-center gap-2 font-medium text-sm hover:text-white transition-all group"
                 >
                   Let's Start <span className="group-hover:translate-x-1 transition-transform">→</span>

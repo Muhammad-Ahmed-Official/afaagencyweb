@@ -1,6 +1,6 @@
 'use client'
 
-import { Facebook, Twitter, Youtube, ArrowRight } from 'lucide-react';
+import { Facebook, Twitter, Youtube, ArrowRight, Linkedin, Instagram } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -31,7 +31,7 @@ export default function Footer() {
               Let&apos;s get to <br /> work
             </h2>
             <a 
-              href="/Contact" 
+              href="https://www.linkedin.com/company/afainnovations" target='_blank'
               className="group inline-flex items-center justify-center px-10 py-4 border border-white rounded-full text-[16px] font-medium transition-all duration-300 hover:bg-white hover:text-black"
             >
               Get the offer 
@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
 
           {/* Right Columns: Links and Contact */}
-          <div className="lg:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-12 pt-16">
+          <div className="lg:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-8 pt-16">
             
             {/* Quick Links */}
             <div>
@@ -80,26 +80,26 @@ export default function Footer() {
                   href="mailto:contact@appsians.com" 
                   className="block text-muted-foreground hover:text-white transition-colors duration-300 text-[16px] break-all"
                 >
-                  contact@appsians.com
+                  afainnovationsofficial@gmail.com
                 </a>
-                <a 
+                {/* <a 
                   href="mailto:hr@appsians.com" 
                   className="block text-muted-foreground hover:text-white transition-colors duration-300 text-[16px] break-all"
                 >
-                  hr@appsians.com
-                </a>
+                  afainnovationsofficial@gmail.com
+                </a> */}
               </div>
               
               {/* Social Icons */}
               <div className="flex items-center space-x-6">
-                <a href="#" className="text-muted-foreground hover:text-white transition-colors duration-300">
+                <a href="https://www.facebook.com/share/17o1AxfnVE/"  target="_blank"  className="text-muted-foreground hover:text-white transition-colors duration-300">
                   <Facebook size={20} />
                 </a>
-                <a href="#" className="text-muted-foreground hover:text-white transition-colors duration-300">
-                  <Twitter size={20} />
+                <a href="https://www.instagram.com/afa_innovations?igsh=MWVwbW1qOHZkOGJjag==" target="_blank"  className="text-muted-foreground hover:text-white transition-colors duration-300">
+                  <Instagram size={20} />
                 </a>
-                <a href="#" className="text-muted-foreground hover:text-white transition-colors duration-300">
-                  <Youtube size={22} />
+                <a href="https://www.linkedin.com/company/afainnovations" className="text-muted-foreground hover:text-white transition-colors duration-300">
+                  <Linkedin size={22} />
                 </a>
               </div>
             </div>
@@ -108,7 +108,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-[14px] text-muted-foreground">
-          <p>© {currentYear}. All rights reserved by Appsians IT Solutions.</p>
+          <p>© {currentYear}. All rights reserved by AFA Innovations.</p>
         </div>
       </div>
 

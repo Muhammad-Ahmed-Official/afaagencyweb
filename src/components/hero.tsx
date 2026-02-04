@@ -1,6 +1,6 @@
 'use client'
 
-import { Instagram, Twitter, Linkedin, ArrowRight, MoveDown } from 'lucide-react';
+import { Instagram, Twitter, Linkedin, ArrowRight, MoveDown, Facebook } from 'lucide-react';
 import { motion } from "framer-motion";
 import { useEffect, useState } from 'react';
 {/* <h2 className="text-[60px] md:text-[85px] font-light leading-[1.1] tracking-tight text-white/90">
@@ -36,7 +36,11 @@ const HeroSection = () => {
           {/* Descriptive Text */}
           <div className="animate-in fade-in slide-in-from-bottom-7 duration-1000 delay-200">
             <p className="text-[16px] md:text-[18px] text-[#B0B0B0] leading-[1.6] max-w-160">
-              We help brands <strong className="text-white font-semibold">achieve their goals</strong> through innovative and creative web and mobile applications, as well as digital marketing services. We have helped numerous brands achieve over <strong className="text-white font-semibold">$10M in annual revenue</strong> through our <strong className="text-white font-semibold">effective and proven solutions</strong>. Let us help <strong className="text-white font-semibold">grow your company</strong> to new heights.
+              At <strong className="text-white font-semibold">AFA Innovations</strong>, we don’t just build software; we <strong className="text-white font-semibold">architect growth engines</strong>. 
+As the global AI market surges toward <strong className="text-white font-semibold">$376 billion in 2026</strong>, the gap between market leaders and the rest is defined by <strong className="text-white font-semibold">technical agility</strong>. 
+We empower your brand to bridge that gap by merging <strong className="text-white font-semibold">elite Web and Mobile Development</strong> with <strong className="text-white font-semibold">custom Applied AI Solutions</strong>. 
+Our approach replaces legacy friction with <strong className="text-white font-semibold">high-velocity digital infrastructure</strong> designed to capture <strong className="text-white font-semibold">maximum market share</strong> in today’s <strong className="text-white font-semibold">intelligence-driven landscape</strong>.
+
             </p>
           </div>
 
@@ -76,18 +80,18 @@ const HeroSection = () => {
           </li>
           <li className='border border-white rounded-full p-2'>
             <a 
-              href="https://twitter.com/mianasadali" 
+              href="https://www.facebook.com/share/17o1AxfnVE/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-white hover:opacity-70 transition-opacity"
             >
-              <Twitter className="w-5 h-5" />
+              <Facebook className="w-5 h-5" />
               <span className="sr-only">Twitter</span>
             </a>
           </li>
           <li className='border border-white rounded-full p-2'>
             <a 
-              href="https://www.linkedin.com/company/appsians/" 
+              href="https://www.linkedin.com/company/afainnovations" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-white hover:opacity-70 transition-opacity"
@@ -148,7 +152,7 @@ function useTypingEffect(
 
 function TypingText() {
   const typedText = useTypingEffect(
-    ["Experiences", "Products", "Interfaces"],
+    ["AI Solutions", "SaaS Platforms", "Web Applications", "Mobile Apps"],
     80,
     50,
     1200
@@ -156,7 +160,7 @@ function TypingText() {
 
   return (
     <motion.h2
-      className="text-[60px] md:text-[85px] font-light leading-[1.1] tracking-tight text-white/90"
+      className="text-[50px] md:text-[75px] font-light leading-[1.1] tracking-tight text-white/90"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}

@@ -13,8 +13,9 @@ const FunFactsSection = () => {
           <h3 className="text-[48px] font-bold leading-[1.2] text-white mb-5 text-center">
             Fun Facts
           </h3>
-          <p className="text-[18px] font-normal leading-[1.6] mx-auto text-muted-foreground max-w-175">
-            Over the years we have done many things that we are proud of. This motivates us to continue looking for new challenges in order to improve our services.
+          <p className="text-[18px] font-normal leading-[1.6] mx-auto text-muted-foreground max-w-210">
+            The <strong>Growth-Centric</strong>  Version (Focus on Scalability)
+The AFA Track Record "Our history is marked by high-velocity growth and engineered excellence. Having successfully navigated the digital landscape for over a decade, we’ve transformed the way brands operate. These achievements fuel our commitment to pushing the boundaries of Applied AI and Web Architecture, constantly refining our services to help you capture your share of the global digital market."
           </p>
         </div>
 
@@ -26,7 +27,7 @@ const FunFactsSection = () => {
               <Smile size={45} strokeWidth={1} className="opacity-80" />
             </div>
             <span className="timer text-[60px] font-extrabold leading-[1.1] text-white block mb-2.5">
-              300
+              15
             </span>
             <h4 className="text-[24px] font-semibold leading-[1.4] text-white">
               Happy Customers
@@ -39,7 +40,7 @@ const FunFactsSection = () => {
               <Coffee size={45} strokeWidth={1} className="opacity-80" />
             </div>
             <span className="timer text-[60px] font-extrabold leading-[1.1] text-white block mb-2.5">
-              12
+              4
             </span>
             <h4 className="text-[24px] font-semibold leading-[1.4] text-white">
               Countries
@@ -52,7 +53,7 @@ const FunFactsSection = () => {
               <Lightbulb size={45} strokeWidth={1} className="opacity-80" />
             </div>
             <span className="timer text-[60px] font-extrabold leading-[1.1] text-white block mb-2.5">
-              623
+              12
             </span>
             <h4 className="text-[24px] font-semibold leading-[1.4] text-white">
               Innovations
@@ -65,7 +66,7 @@ const FunFactsSection = () => {
               <Briefcase size={45} strokeWidth={1} className="opacity-80" />
             </div>
             <span className="timer text-[60px] font-extrabold leading-[1.1] text-white block mb-2.5">
-              860
+              10
             </span>
             <h4 className="text-[24px] font-semibold leading-[1.4] text-white">
               Great Projects

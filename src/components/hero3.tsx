@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, MoveDown, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, MoveDown, Twitter } from 'lucide-react';
 import React from 'react';
 
 const Hero3: React.FC = () => {
@@ -52,18 +52,18 @@ const Hero3: React.FC = () => {
           </li>
           <li className='border border-white rounded-full p-2'>
             <a 
-              href="https://twitter.com/mianasadali" 
+              href="https://www.facebook.com/share/17o1AxfnVE/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-white hover:opacity-70 transition-opacity"
             >
-              <Twitter className="w-5 h-5" />
+              <Facebook className="w-5 h-5" />
               <span className="sr-only">Twitter</span>
             </a>
           </li>
           <li className='border border-white rounded-full p-2'>
             <a 
-              href="https://www.linkedin.com/company/appsians/" 
+              href="https://www.linkedin.com/company/afainnovations" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-white hover:opacity-70 transition-opacity"

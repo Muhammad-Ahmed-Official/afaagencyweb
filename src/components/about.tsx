@@ -67,7 +67,7 @@ const AboutSection = () => {
 
             {/* Experience Badge */}
             <div className="absolute -bottom-10 left-0 bg-transparent flex items-baseline gap-4 pointer-events-none">
-              <span className="text-[120px] font-extrabold leading-none text-white opacity-20 select-none">14</span>
+              <span className="text-[120px] font-extrabold leading-none text-white opacity-20 select-none">3</span>
               <div className="mb-6">
                 <p className="text-white font-bold tracking-widest text-sm leading-tight">YEARS OF</p>
                 <p className="text-white font-bold tracking-widest text-sm leading-tight">EXPERIENCE</p>
@@ -76,50 +76,58 @@ const AboutSection = () => {
           </div>
 
           {/* Right Column: Text Content */}
-          <div className="w-full md:w-1/2 mt-20 md:mt-0">
-            <h4 className="text-[24px] font-semibold text-white mb-4">
-              Trust the best – trust Appsians.
-            </h4>
-            
-            <h3 className="text-[48px] font-bold text-white mb-8 leading-[1.2]">
-              Transforming ideas into <span className="text-white underline decoration-white/20">Digital Realities.</span>
-            </h3>
-            
-            <p className="text-[18px] text-[#B0B0B0] leading-[1.6] mb-10">
-              From start-ups to enterprises, Appsians has helped businesses of all sizes turn their ideas into reality. With a focus on innovation, quality, and customer service, we&apos;re the software development partner you can trust to bring your project to life and help you reach your goals.
-            </p>
-            
-            <ul className="space-y-4 mb-12">
-              {[
-                "Developed products that generates $5M+ in annual revenue",
-                "Expertise in developing custom software solutions for multi-national clients",
-                "Successfully served clients in the United States, UK, Germany, Dubai, Saudi Arabia, India, Pakistan, Egypt, Syria, Ukraine, and Portugal",
-                "A proven track record of delivering high-quality software solutions for over a decade"
-              ].map((item, idx) => (
-                <li key={idx} className="flex items-start gap-4">
-                  <span className="mt-2.5 w-1.5 h-1.5 bg-white rounded-full shrink-0" />
-                  <span className="text-[#B0B0B0] text-[18px]">{item}</span>
-                </li>
-              ))}
-            </ul>
+         <div className="w-full md:w-1/2">
+  {/* Small top spacing for overall balance */}
+  <div className="mb-6">
+    <h4 className="text-[22px] font-semibold text-white mb-2">
+      Trust the Elite – Trust AFA Innovations. Architecting the Future of Digital Reality.
+    </h4>
+    
+    <h3 className="text-[32px] md:text-[36px] font-bold text-white mb-4 leading-tight">
+      The AFA Innovations Standard: <span className="text-white underline decoration-white/20">Global Engineering, Proven Growth</span>
+    </h3>
+    
+    <p className="text-[17px] md:text-[18px] text-[#B0B0B0] leading-[1.6]">
+      From disruptive startups to global enterprises, <strong>AFA Innovations</strong> serves as the premier software development partner for brands ready to scale. 
+      With a decade-long legacy of precision engineering, we don’t just build applications; we build assets. 
+      Our focus on AI-driven innovation and technical SEO integrity ensures your project isn't just launched—it’s positioned to lead.
+    </p>
+  </div>
 
-            <a 
-              href="/contact" 
-              className="inline-flex items-center justify-between gap-6 px-10 py-5 border border-white rounded-full bg-transparent text-white font-medium hover:bg-white hover:text-black transition-all duration-300 group"
-            >
-              <span className="text-lg">Start a Project</span>
-              <svg 
-                width="12" 
-                height="10" 
-                viewBox="0 0 12 10" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-                className="transform group-hover:translate-x-1 transition-transform"
-              >
-                <path d="M1 5H11M11 5L7 1M11 5L7 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </a>
-          </div>
+  <ul className="space-y-3 mb-6 pl-5">
+    {[
+      "Venture-Ready Engineering: Architected products that secured €1M+ in seed and Series A funding, meeting the highest investor standards",
+      "Multinational Technical Expertise: Custom software solutions for high-compliance markets, ensuring performance & data security",
+      "A Global Footprint: Serving market leaders across the USA, UK, Pakistan, and Sweden with localized expertise",
+      "A Decade of Authority: Over 3 years of experience in Web 3.0, Mobile Ecosystems, and Applied AI with a track record of high-performance software delivery"
+    ].map((item, idx) => (
+      <li key={idx} className="flex items-start gap-3">
+        <span className="mt-1 w-2 h-2 bg-white rounded-full shrink-0" />
+        <span className="text-[#B0B0B0] text-[17px] md:text-[18px]">{item}</span>
+      </li>
+    ))}
+  </ul>
+
+  <a 
+    href="/Contact" 
+    className="inline-flex items-center gap-4 px-6 py-3 border border-white rounded-full bg-transparent text-white font-medium hover:bg-white hover:text-black transition-all duration-300 group"
+  >
+    <span className="text-lg md:text-xl">Start a Project</span>
+    <svg 
+      width="12" 
+      height="10" 
+      viewBox="0 0 12 10" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+      className="transform group-hover:translate-x-1 transition-transform"
+    >
+      <path d="M1 5H11M11 5L7 1M11 5L7 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  </a>
+</div>
+
+
+
           
         </div>
       </div>

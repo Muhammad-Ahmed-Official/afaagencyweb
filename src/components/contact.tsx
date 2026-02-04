@@ -8,8 +8,8 @@ const ContactCards: React.FC = () => {
       icon: <Phone className="w-8 h-8 text-white" strokeWidth={1.5} />,
       title: 'Call us today',
       links: [
-        { label: 'PS: +1 929 5825 465', href: 'tel:+19295825465' },
-        { label: 'HO: +1 934 2032 800', href: 'tel:+19342032800' },
+        { label: 'PH: +923342865069', href: 'tel:+923342865069' },
+        { label: 'PH: +923312456771', href: 'tel:+923312456771' },
       ],
     },
     {
@@ -17,27 +17,27 @@ const ContactCards: React.FC = () => {
       icon: <Mail className="w-8 h-8 text-white" strokeWidth={1.5} />,
       title: 'Our emails',
       links: [
-        { label: 'contact@appsians.com', href: 'mailto:contact@appsians.com' },
-        { label: 'office@appsians.com', href: 'mailto:office@appsians.com' },
+        { label: 'afainnovationsofficial@gmail.com', href: 'afainnovationsofficial@gmail.com' },
+        // { label: 'office@appsians.com', href: 'mailto:office@appsians.com' },
       ],
     },
-    {
-      id: 3,
-      icon: <MapPin className="w-8 h-8 text-white" strokeWidth={1.5} />,
-      title: 'Our address',
-      links: [
-        { 
-          label: '30 N GOULD ST STE R SHERIDAN, WY 82801', 
-          href: 'https://maps.app.goo.gl/xMFpnwxMqAaUMfbYA' 
-        },
-      ],
-    },
+    // {
+    //   id: 3,
+    //   icon: <MapPin className="w-8 h-8 text-white" strokeWidth={1.5} />,
+    //   title: 'Our address',
+    //   links: [
+    //     { 
+    //       label: '30 N GOULD ST STE R SHERIDAN, WY 82801', 
+    //       href: 'https://maps.app.goo.gl/xMFpnwxMqAaUMfbYA' 
+    //     },
+    //   ],
+    // },
   ];
 
   return (
 <section className="bg-linear-to-b from-black to-gray-900 py-28">
   <div className="container mx-auto max-w-6xl px-4 sm:px-6">
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {contactData.map((item) => (
         <div 
           key={item.id} 
@@ -97,7 +97,7 @@ const ContactCards: React.FC = () => {
       <div className="mt-4 flex justify-center space-x-2">
         <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
         <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse delay-150" />
-        <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse delay-300" />
+        {/* <div className="w-2 h-2 rounded-full bg-blue-500 animate-pulse delay-300" /> */}
       </div>
     </div>
   </div>

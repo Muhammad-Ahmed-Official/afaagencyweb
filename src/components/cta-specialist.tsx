@@ -5,11 +5,9 @@ import { MoveRight } from "lucide-react";
 
 const TypedCTA: React.FC = () => {
   const phrases = [
-    "UI/UX Specialist?",
-    "SEO Expert?",
     "Web Development?",
     "Mobile Apps?",
-    "IT Solutions?",
+    "AI Solutions?",
   ];
 
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
