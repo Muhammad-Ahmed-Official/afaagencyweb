@@ -46,20 +46,28 @@ Our approach replaces legacy friction with <strong className="text-white font-se
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4 pt-4 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-500">
-            <a
-              href="/Contact"
-              className="inline-flex items-center justify-between gap-3 px-8 py-4 rounded-full border border-white text-white font-medium text-sm transition-all duration-300 hover:bg-white hover:text-black group min-w-45"
-            >
-              Get in touch
-              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
-            <a
-              href="/About"
-              className="inline-flex items-center justify-between gap-3 px-8 py-4 rounded-full border border-white text-white font-medium text-sm transition-all duration-300 hover:bg-white hover:text-black group min-w-45"
-            >
-              About us
-              <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
+            <div className="header__action">
+              <a  href="/Contact" 
+                className="btn btn-style1 group relative flex items-center justify-center gap-2 px-6 py-4 border border-white rounded-[50px] text-white text-[15px] font-medium overflow-hidden transition-all duration-300">
+                <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+                
+                <span className="relative z-10 transition-colors duration-400 group-hover:text-black">
+                  Get in Touch
+                </span>
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </a>
+            </div>
+            <div className="header__action">
+              <a  href="/About" 
+                className="btn btn-style1 group relative flex items-center justify-center gap-2 px-6 py-4 border border-white rounded-[50px] text-white text-[15px] font-medium overflow-hidden transition-all duration-300">
+                <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+                
+                <span className="relative z-10 transition-colors duration-400 group-hover:text-black">
+                  Get in Touch
+                </span>
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

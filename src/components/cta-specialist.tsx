@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { MoveRight } from "lucide-react";
+import { ArrowRight, MoveRight } from "lucide-react";
 
 const TypedCTA: React.FC = () => {
   const phrases = [
@@ -48,14 +48,25 @@ const TypedCTA: React.FC = () => {
 
   return (
     <section 
-      className="typed-section py-25 bg-black border-t border-white/10"
-      style={{ backgroundColor: "#06080f" }}
+    className="relative py-16 bg-white/90"
     >
+      {/* <div className="absolute inset-0 bg-linear-to-br from-blue-900/10 via-purple-900/5 to-cyan-900/10" />
+      
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)`,
+          backgroundSize: '50px 50px'
+        }} />
+      </div> */}
+
+      {/* <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" /> */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
+
       <div className="container mx-auto max-w-285 px-6">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
           <div className="flex-1">
             <h4 
-              className="parent-typed-text text-white text-[24px] sm:text-[28px] md:text-[36px] font-semibold leading-[1.3] m-0"
+              className="parent-typed-text text-black text-[24px] sm:text-[28px] md:text-[36px] font-semibold leading-[1.3] m-0"
               style={{ fontFamily: 'var(--font-sans)', letterSpacing: '-0.01em' }}
             >
               <span className="mt_typed-beforetext">Are you looking for </span>
@@ -63,13 +74,19 @@ const TypedCTA: React.FC = () => {
               <span className="typed-cursor inline-block ml-1 animate-pulse font-light">|</span>
             </h4>
           </div>
-          <div className="shrink-0 text-left md:text-right">
+          <div className="shrink-0 text-left cursor-pointer md:text-right">
             <a 
               href="/Contact" 
-              className="btn btn-style1 group flex items-center justify-center gap-2 px-8 py-3.5 border border-white rounded-[50px] text-white text-[15px] font-medium transition-all duration-300 hover:bg-white hover:text-black"
+              className="btn btn-style1 group relative flex items-center justify-center gap-2 px-8 py-3 border border-black rounded-[50px] text-white text-[15px] font-medium overflow-hidden transition-all duration-300"
             >
-              <span>Contact</span>
-              <MoveRight className="w-[11.4px] h-[9.2px] transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.5} />
+              {/* Animated background layer */}
+              <span className="absolute inset-0 bg-black -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+              
+              {/* Text and icon */}
+              <span className="relative z-10 transition-colors text-black duration-400 group-hover:text-white  ">
+                Contact
+              </span>
+              <ArrowRight className="w-4 h-4 transition-transform text-black group-hover:text-white duration-300 group-hover:translate-x-1" />
             </a>
           </div>
         </div>

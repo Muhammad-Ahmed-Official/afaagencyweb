@@ -1,3 +1,4 @@
+import BrandsLogoSlider from "@/components/brands";
 import AboutSection from "../components/about";
 import CTASpecialist from "../components/cta-specialist";
 import Footer from "../components/footer";
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <BrandsLogoSlider />
         <AboutSection />
         <ServicesSection />
         <FunFactsSection />

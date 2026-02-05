@@ -124,7 +124,20 @@ const ServicesSection = () => {
   }, [currentIndex, isMobile]);
 
   return (
-    <section className="services-section py-25 bg-linear-to-r from-[#06080f] via-[#0d1630] to-[#06080f] text-white overflow-hidden">
+    <section className="relative py-10 bg-linear-to-br from-black via-gray-900 to-black overflow-hidden"
+    >
+      <div className="absolute inset-0 bg-linear-to-br from-blue-900/10 via-purple-900/5 to-cyan-900/10" />
+      
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)`,
+          backgroundSize: '50px 50px'
+        }} />
+      </div>
+
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
+
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <div className="mb-12 md:mb-16">
           <h3 className="text-3xl md:text-[36px] font-bold mb-4 text-center">
@@ -308,10 +321,6 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        {/* Slider Info */}
-        {/* <div className="mt-8 text-center text-sm text-muted-foreground">
-          <p>Drag or use arrows to navigate • {currentIndex + 1} of {services.length}</p>
-        </div> */}
       </div>
     </section>
   );
