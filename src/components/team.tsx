@@ -5,41 +5,34 @@ import { useState, useRef } from 'react'
 const testimonials = [
   {
     id: 1,
-    name: 'Agha Talha',
+    name: 'Muhammad Farooq',
     role: 'CEO And Founder Of Aizex',
-    image: '../ceo1.jpeg',
+    image: 'founder1.jpeg',
     text: "We couldn't be happier with the website AFA Innovations created for Aizex! The design is sleek and modern, aligning perfectly with our brand's vision. Their attention to detail and dedication to delivering a user-friendly experience fully exceeded our expectations. This team turned our ideas into a digital masterpiece!",
   },
   {
     id: 2,
-    name: 'Muhammad Ali',
+    name: 'Muhammad Jarar',
     role: 'CEO and Founder Luverraltd',
-    image: '../ceo3.jpeg',
+    image: 'founder2.jpeg',
     text: 'AFA Innovations is a great startup for designing any type of website. They worked closely with me to make sure all my ideas were considered, offering regular updates and feedback. I highly recommend their team for anyone looking for a reliable Website Design and Development Partner.',
-  },
-  { 
-    id: 3, 
-    name: 'Beetoo', 
-    role: 'Founder at Quickpipe', 
-    image: '../ceo2.jpeg', 
-    text: 'AFA innovation played a key part in kickstarting QuickPipe Ai. The value of the work they produce for such an affordable price was great and although I was their first few clients and have to fix so much for me they still delivered the initial phases of my Ai platform. I’d recommend their services to others who are within SaaS or Ai platforms!Beetoo - founder at QuickPipe Ai'
   },
 ];
 
-export default function Reviews() {
+export default function Team() {
   const containerRef = useRef(null)
   const [isPaused, setIsPaused] = useState(false)
 
   return (
-    <section className="relative  bg-white/90 py-10 overflow-hidden">
+    <section className="relative bg-white/90 py-10 overflow-hidden max-w-7xl mx-auto">
       {/* Background Shape */}
-      <div className="absolute top-0 left-0 w-1/2 h-full bg-linear-to-r from-emerald-50/30 to-transparent clip-path-polygon" />
+      <div className="absolute top-0 left-0 w-1/2 h-full " />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         {/* Header */}
         <div className="mb-10 text-center">
           <h3 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2">
-            Our Clients
+            Our Teams
           </h3>
           <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
             They are just some of those who have trusted our services.
@@ -67,14 +60,6 @@ export default function Reviews() {
                 >
                   {/* Card */}
                   <div className="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 h-full shadow-lg hover:shadow-xl hover:border-emerald-200 transition-all duration-500">
-                    {/* Stars Rating */}
-                    <div className="flex gap-1 mb-4">
-                      {[...Array(5)].map((_, i) => (
-                        <span key={i} className="text-black text-xl">
-                          ★
-                        </span>
-                      ))}
-                    </div>
 
                     {/* Review Text */}
                     <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6 line-clamp-4 h-24 md:h-28">
@@ -93,15 +78,6 @@ export default function Reviews() {
                           alt={testimonial.name}
                           className="w-16 h-16 rounded-full object-cover border-2 border-black/30"
                         />
-                        {/* <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-emerald-500 rounded-full flex items-center justify-center">
-                          <svg
-                            className="w-3 h-3 text-white"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div> */}
                       </div>
 
                       {/* Author Details */}
@@ -129,7 +105,7 @@ export default function Reviews() {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-50%);
+           transform: translateX(-100%);
           }
         }
 

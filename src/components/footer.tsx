@@ -98,7 +98,7 @@ export default function Footer() {
                 <a href="https://www.instagram.com/afa_innovations?igsh=MWVwbW1qOHZkOGJjag==" target="_blank"  className="text-muted-foreground hover:text-white transition-colors duration-300">
                   <Instagram size={20} />
                 </a>
-                <a href="https://www.linkedin.com/company/afainnovations" className="text-muted-foreground hover:text-white transition-colors duration-300">
+                <a href="https://www.linkedin.com/company/afainnovations" target="_blank" className="text-muted-foreground hover:text-white transition-colors duration-300">
                   <Linkedin size={22} />
                 </a>
               </div>
