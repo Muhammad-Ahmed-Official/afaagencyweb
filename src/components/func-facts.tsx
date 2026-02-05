@@ -23,12 +23,12 @@ const FunFactsSection = () => {
       <div className="container px-6 max-w-300">
         {/* Section Header */}
         <div className="mb-4">
-          <h3 className="text-[48px] font-bold leading-[1.2] text-black mb-2 text-center">
+          <h3 className="text-3xl md:text-[48px] font-bold leading-[1.2] text-black mb-2 text-center">
             Fun Facts
           </h3>
-          <p className="text-[18px] font-normal leading-[1.6] mx-auto text-black/90 max-w-210">
+          <p className="text-[14px] md:text-[18px] font-normal leading-[1.6] md:mx-auto text-justify text-black/90 max-w-210">
             The <strong>Growth-Centric</strong>  Version (Focus on Scalability)
-The AFA Track Record "Our history is marked by high-velocity growth and engineered excellence. Having successfully navigated the digital landscape for over a decade, we’ve transformed the way brands operate. These achievements fuel our commitment to pushing the boundaries of Applied AI and Web Architecture, constantly refining our services to help you capture your share of the global digital market."
+The <strong>AFA</strong>Track Record Our history is marked by high-velocity growth and engineered excellence. Having successfully navigated the digital landscape for over a decade, we’ve transformed the way brands operate. These achievements fuel our commitment to pushing the boundaries of Applied AI and Web Architecture, constantly refining our services to help you capture your share of the global digital market.
           </p>
         </div>
 
@@ -114,7 +114,7 @@ function Stats() {
         <div className="radial-icon mb-3 text-black">
           <Smile size={45} strokeWidth={1} className="opacity-80" />
         </div>
-        <span className="timer text-[60px] font-extrabold leading-[1.1] text-black block mb-2">
+        <span className="timer text-4xl md:text-[60px] font-extrabold leading-[1.1] text-black block mb-2">
           {happyCustomers}
           {/* <span className="text-blue-400 ml-1">+</span> */}
         </span>
@@ -128,7 +128,7 @@ function Stats() {
         <div className="radial-icon mb-3 text-black">
           <Coffee size={45} strokeWidth={1} className="opacity-80" />
         </div>
-        <span className="timer text-[60px] font-extrabold leading-[1.1] text-black block mb-2">
+        <span className="timer text-4xl md:text-[60px] font-extrabold leading-[1.1] text-black block mb-2">
           {countries}
           {/* <span className="text-blue-400 ml-1">+</span> */}
         </span>
@@ -142,7 +142,7 @@ function Stats() {
         <div className="radial-icon mb-3 text-black">
           <Lightbulb size={45} strokeWidth={1} className="opacity-80" />
         </div>
-        <span className="timer text-[60px] font-extrabold leading-[1.1] text-black block mb-2">
+        <span className="timer text-4xl md:text-[60px]  font-extrabold leading-[1.1] text-black block mb-2">
           {innovations}
           {/* <span className="text-blue-400 ml-1">+</span> */}
         </span>
@@ -156,7 +156,7 @@ function Stats() {
         <div className="radial-icon mb-3 text-black">
           <Briefcase size={45} strokeWidth={1} className="opacity-80" />
         </div>
-        <span className="timer text-[60px] font-extrabold leading-[1.1] text-black block mb-2">
+        <span className="timer text-4xl md:text-[60px] font-extrabold leading-[1.1] text-black block mb-2">
           {greatProjects}
           {/* <span className="text-blue-400 ml-1">+</span> */}
         </span>

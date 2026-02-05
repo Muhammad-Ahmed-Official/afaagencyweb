@@ -27,7 +27,7 @@ export default function Footer() {
             <span className="text-[12px] font-bold tracking-[3.6px] uppercase text-white mb-6 block">
               READY TO DO THIS
             </span>
-            <h2 className="text-[60px] md:text-[85px] font-extrabold leading-[1.1] mb-10 text-white">
+            <h2 className="text-[36px] md:text-[85px] font-extrabold leading-[1.1] mb-10 text-white">
               Let&apos;s get to <br /> work
             </h2>
             <div className="header__action">
@@ -107,21 +107,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-24 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-[14px] text-muted-foreground">
+        <div className="mt-24 pt-4 border-t border-white/10 justify-between text-center text-[14px] text-muted-foreground">
           <p>© {currentYear}. All rights reserved by AFA Innovations.</p>
         </div>
       </div>
 
-      {/* Cookie Banner (Visual Simulation from Screenshot) */}
-      {/* <div className="fixed bottom-0 left-0 w-full bg-sidebar/95 backdrop-blur-sm border-t border-white/5 py-3 px-6 z-9999 flex flex-wrap items-center justify-center gap-4 text-center">
-        <p className="text-[13px] text-muted-foreground">
-          We use cookies to give you the best online experience. By continuing to browse the site you are agreeing to our use of cookies. 
-          <a href="/privacy-policy" className="ml-1 underline hover:text-white">Read more</a>
-        </p>
-        <button className="bg-white text-black text-[13px] font-bold px-6 py-1.5 rounded-full hover:bg-gray-200 transition-colors">
-          I agree
-        </button>
-      </div> */}
       <style jsx>{`
   @keyframes gradientMove {
     0% {

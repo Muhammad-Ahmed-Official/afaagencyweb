@@ -93,15 +93,6 @@ export default function Reviews() {
                           alt={testimonial.name}
                           className="w-16 h-16 rounded-full object-cover border-2 border-black/30"
                         />
-                        {/* <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-emerald-500 rounded-full flex items-center justify-center">
-                          <svg
-                            className="w-3 h-3 text-white"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </div> */}
                       </div>
 
                       {/* Author Details */}
@@ -134,7 +125,7 @@ export default function Reviews() {
         }
 
         .animate-testimonials-marquee {
-          animation: testimonials-marquee 40s linear infinite;
+          animation: testimonials-marquee 8s linear infinite;
         }
 
         .line-clamp-4 {
@@ -151,7 +142,7 @@ export default function Reviews() {
         /* Responsive adjustments */
         @media (max-width: 768px) {
           .animate-testimonials-marquee {
-            animation-duration: 35s;
+            animation-duration: 8s;
           }
         }
       `}</style>

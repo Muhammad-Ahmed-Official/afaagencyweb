@@ -25,7 +25,7 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             >
-              <h1 className="text-[60px] md:text-[85px] font-extrabold leading-[1.1] tracking-tight text-white mb-2">
+              <h1 className="text-[32px] md:text-[85px] font-extrabold leading-[1.1] tracking-tight text-white mb-2">
                 Crafting Digital
               </h1>
 
@@ -168,7 +168,7 @@ function TypingText() {
 
   return (
     <motion.h2
-      className="text-[50px] md:text-[75px] font-light leading-[1.1] tracking-tight text-white/90"
+      className="text-[28px] md:text-[75px] font-light leading-[1.1] tracking-tight text-white/90"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
