@@ -7,6 +7,7 @@ import Header from "../components/header";
 import HeroSection from "../components/hero";
 import PortfolioSection from "../components/portfolio";
 import ServicesSection from "../components/services";
+import Reviews from "@/components/review";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <ServicesSection />
         <FunFactsSection />
         <PortfolioSection />
+        <Reviews />
         <CTASpecialist />
       </main>
       <Footer />

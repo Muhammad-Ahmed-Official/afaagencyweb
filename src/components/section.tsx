@@ -18,14 +18,6 @@ const Section: React.FC = () => {
                 <div className="absolute inset-0 bg-linear-to-tr from-transparent via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
               
-              {/* Floating badge on image */}
-              {/* <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-sm font-semibold text-gray-900">Trusted Partner</span>
-                </div>
-              </div> */}
-              
               {/* Decorative elements */}
               <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
               <div className="absolute -top-8 -left-8 w-40 h-40 bg-blue-500/5 rounded-full blur-3xl"></div>
@@ -34,12 +26,12 @@ const Section: React.FC = () => {
             {/* Enhanced stats section */}
             <div className="mt-10 grid grid-cols-2 gap-4">
               <div className="bg-linear-to-br from-blue-50 to-white p-5 rounded-2xl border border-blue-100 shadow-sm">
-                <div className="text-3xl font-bold text-blue-700 mb-1">12+</div>
+                <div className="text-3xl font-bold text-black mb-1">12+</div>
                 <div className="text-sm text-gray-700 font-medium">Years Experience</div>
                 <div className="mt-2 text-xs text-gray-500">Since 2012</div>
               </div>
               <div className="bg-linear-to-br from-blue-50 to-white p-5 rounded-2xl border border-blue-100 shadow-sm">
-                <div className="text-3xl font-bold text-blue-700 mb-1">500+</div>
+                <div className="text-3xl font-bold text-black mb-1">500+</div>
                 <div className="text-sm text-gray-700 font-medium">Projects Delivered</div>
                 <div className="mt-2 text-xs text-gray-500">97% Success Rate</div>
               </div>
@@ -67,7 +59,7 @@ const Section: React.FC = () => {
               {/* Enhanced badge with icon */}
               <div className="inline-flex items-center gap-3 px-5 py-2.5 bg-linear-to-r from-blue-50 to-indigo-50 text-blue-700 rounded-full text-sm font-semibold mb-8 border border-blue-200 shadow-sm">
                 <div className="flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full">
-                  <svg className="w-3.5 h-3.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-3.5 h-3.5 text-black" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -85,7 +77,7 @@ const Section: React.FC = () => {
 
               {/* Description with icon */}
               <div className="relative pl-4 mb-10">
-                <div className="absolute left-0 top-0 bottom-0 w-1 bg-linear-to-b from-blue-400 to-indigo-500 rounded-full"></div>
+                <div className="absolute left-0 top-0 bottom-0 w-1 bg-black rounded-full"></div>
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                   From start-ups to enterprises, Appsians has helped businesses of all sizes turn their ideas into reality. 
                   With a focus on innovation, quality, and customer service, we're the software development partner 
@@ -96,7 +88,7 @@ const Section: React.FC = () => {
               {/* Achievements List with cards */}
               <div className="">
                 <h3 className="text-xl font-semibold text-gray-900 mb-6 flex items-center gap-3">
-                  <div className="w-3 h-3 bg-blue-600 rounded-full"></div>
+                  <div className="w-3 h-3 bg-black rounded-full"></div>
                   <span className="bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
                     Our Key Achievements
                   </span>

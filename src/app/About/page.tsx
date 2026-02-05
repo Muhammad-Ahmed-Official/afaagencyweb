@@ -13,11 +13,6 @@ export default function page() {
       <main>
         <Hero3 />
         <Section />
-        {/* <HeroBanner /> */}
-        {/* <AboutIntro /> */}
-        {/* <CeoMessage /> */}
-        {/* <Testimonials /> */}
-        {/* <ClientsSection /> */}
         <CTASpecialist />
       </main>
       <Footer />

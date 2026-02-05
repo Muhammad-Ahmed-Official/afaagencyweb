@@ -63,7 +63,7 @@ Our approach replaces legacy friction with <strong className="text-white font-se
                 <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
                 
                 <span className="relative z-10 transition-colors duration-400 group-hover:text-black">
-                  Get in Touch
+                  About Us
                 </span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </a>

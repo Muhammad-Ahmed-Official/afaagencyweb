@@ -60,7 +60,7 @@ export default function BrandsLogoSlider() {
         {/* Section Title - More visible */}
         <div className="text-center mb-5">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 tracking-tight">
-            Trusted by <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Industry Leaders</span>
+            Trusted by Industry Leaders
           </h2>
           <p className="text-gray-200 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             Partnering with innovative companies worldwide to deliver exceptional digital solutions

@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     
-    <footer className="relative bg-[#0d1630] text-white overflow-hidden">
+    <footer className="relative bg-black/90 text-white overflow-hidden">
       {/* Background Pattern Overlay */}
       <div 
         className="absolute inset-0 opacity-20 pointer-events-none"
@@ -30,13 +30,17 @@ export default function Footer() {
             <h2 className="text-[60px] md:text-[85px] font-extrabold leading-[1.1] mb-10 text-white">
               Let&apos;s get to <br /> work
             </h2>
-            <a 
-              href="https://www.linkedin.com/company/afainnovations" target='_blank'
-              className="group inline-flex items-center justify-center px-10 py-4 border border-white rounded-full text-[16px] font-medium transition-all duration-300 hover:bg-white hover:text-black"
-            >
-              Get the offer 
-              <ArrowRight className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-            </a>
+            <div className="header__action">
+              <a  href="/Contact" 
+                className="btn btn-style1 group relative flex items-center justify-center gap-2 px-5 py-3 border border-white rounded-[50px] text-white text-[15px] font-medium overflow-hidden transition-all duration-300">
+                <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+                
+                <span className="relative z-10 transition-colors duration-400 group-hover:text-black">
+                  Get the Offer 
+                </span>
+                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:text-black group-hover:translate-x-1" />
+              </a>
+            </div>
           </div>
 
           {/* Right Columns: Links and Contact */}
