@@ -54,19 +54,15 @@ export default function Footer() {
                 <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-linear-to-r from-blue-400 via-white to-blue-400 bg-size-[200%_100%] group-hover:w-full group-hover:animate-[gradientMove_3s_linear_infinite] transition-all duration-500 ease-out"></span>
               </h4>
               <ul className="space-y-4">
+               
                 <li>
-                  <a href="/gdpr" className="text-muted-foreground hover:text-white transition-colors duration-300 text-[16px]">
-                    GDPR
+                  <a href="/About" className="text-muted-foreground hover:text-white transition-colors duration-300 text-[16px]">
+                    Contact Us
                   </a>
                 </li>
                 <li>
-                  <a href="/terms-and-conditions" className="text-muted-foreground hover:text-white transition-colors duration-300 text-[16px]">
-                    Terms and conditions
-                  </a>
-                </li>
-                <li>
-                  <a href="/privacy-policy" className="text-muted-foreground hover:text-white transition-colors duration-300 text-[16px]">
-                    Privacy Policy
+                  <a href="/Contact" className="text-muted-foreground hover:text-white transition-colors duration-300 text-[16px]">
+                    About Us
                   </a>
                 </li>
               </ul>

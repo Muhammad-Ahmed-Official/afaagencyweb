@@ -7,17 +7,23 @@ const testimonials = [
     id: 1,
     name: 'Agha Talha',
     role: 'CEO And Founder Of Aizex',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop',
+    image: '../ceo1.jpeg',
     text: "We couldn't be happier with the website AFA Innovations created for Aizex! The design is sleek and modern, aligning perfectly with our brand's vision. Their attention to detail and dedication to delivering a user-friendly experience fully exceeded our expectations. This team turned our ideas into a digital masterpiece!",
   },
   {
     id: 2,
     name: 'Muhammad Ali',
-    role: 'CEO and Founder of Team Amazon',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop',
+    role: 'CEO and Founder Luverraltd',
+    image: '../ceo3.jpeg',
     text: 'AFA Innovations is a great startup for designing any type of website. They worked closely with me to make sure all my ideas were considered, offering regular updates and feedback. I highly recommend their team for anyone looking for a reliable Website Design and Development Partner.',
   },
-  { id: 3, name: 'Sarah Johnson', role: 'Marketing Manager', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop', text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.', },
+  { 
+    id: 3, 
+    name: 'Beetoo', 
+    role: 'Founder at Quickpipe', 
+    image: '../ceo2.jpeg', 
+    text: 'AFA innovation played a key part in kickstarting QuickPipe Ai. The value of the work they produce for such an affordable price was great and although I was their first few clients and have to fix so much for me they still delivered the initial phases of my Ai platform. I’d recommend their services to others who are within SaaS or Ai platforms!Beetoo - founder at QuickPipe Ai'
+  },
 ];
 
 export default function Reviews() {

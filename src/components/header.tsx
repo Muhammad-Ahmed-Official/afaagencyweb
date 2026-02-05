@@ -1,8 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import { ArrowRight, Instagram, Twitter, Linkedin, MapPin } from 'lucide-react';
-import Logo from "../../public/logo.png"
+import { ArrowRight } from 'lucide-react';
+import Logo from "../../public/logo2.png"
 import Image from 'next/image';
 
 export default function Header() {
@@ -42,7 +42,7 @@ export default function Header() {
                 alt="AFA Innovation"
                 // width={105}
                 // height={100}
-                className="h-auto w-44 object-contain"
+                className="h-auto w-24 object-contain"
               />
             </a>
           </div>

@@ -6,27 +6,27 @@ const projects = [
     title: 'QuickPipe.ai',
     category: 'SaaS AI sales platform',
     image: 'img3.jpeg',
-    link: 'https://appsians.com/project/passports-and-visas',
+    link: 'Quickpipe.ai',
   },
   {
     id: '02',
     title: 'Stride.ai',
     category: 'AI FITNESS TRAINEER',
-    image: 'img2.jpeg',
-    link: 'https://appsians.com/project/subway-crm',
+    image: 'img4.jpeg',
+    link: 'https://stridefitness.framer.website',
   },
   {
     id: '03',
     title: 'Amanah.ai',
     category: 'Web Development',
-    image: 'img1.jpeg',
+    image: 'img2.jpeg',
     link: '#',
   },
   {
     id: '04',
     title: 'QUTFYT.ai',
     category: 'Web Development',
-    image: 'img4.jpeg',
+    image: 'img1.jpeg',
     link: '#',
   },
   {
@@ -35,6 +35,13 @@ const projects = [
     category: 'Web Development',
     image: 'img5.jpeg',
     link: '#',
+  },
+  {
+    id: '05',
+    title: 'Luverra.ltd',
+    category: 'Web Development',
+    image: 'img6.jpeg',
+    link: 'Luverraltd.com',
   },
 ];
 

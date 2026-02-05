@@ -2,39 +2,34 @@
 
 const clients = [
   {
-    name: "Locodel",
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1673187904locodel-improve-5.png",
-    alt: "Locodel"
+    name: "Luverra.ltd",
+    src: "brand1.png",
+    alt: "Luverra.ltd"
   },
   {
-    name: "Domino's",
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1673187842dominos-logo-6.png",
-    alt: "Domino's"
+    name: "QUTFYT.ai",
+    src: "brand2.png",
+    alt: "QUTFYT.ai"
   },
   {
-    name: "FlexScreen Midwest",
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1673188104flex-screen-logo-7.png",
-    alt: "FlexScreen Midwest"
+    name: "Stride.ai",
+    src: "brand3.png",
+    alt: "Stride.ai"
   },
   {
-    name: "Bitesforu",
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1673188478bitesforyou-1.png",
-    alt: "Bitesforu"
+    name: "Qadr.ai",
+    src: "brand4.png",
+    alt: "Qadr.ai"
   },
   {
-    name: "MedTransExpress",
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1673188545medtransexpress-2.png",
-    alt: "MedTransExpress"
+    name: "AMANI",
+    src: "brand5.png",
+    alt: "AMANI"
   },
   {
-    name: "PassportsandVisas.com",
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1673188854passportsandvisas-logo-3.png",
-    alt: "PassportsandVisas.com"
-  },
-  {
-    name: "Perfect Passport Photos",
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/1673188989perfect-passport-photos-4.png",
-    alt: "Perfect Passport Photos"
+    name: "QuickPipe.ai",
+    src: "brand6.png",
+    alt: "QuickPipe.ai"
   }
 ];
 
@@ -74,7 +69,7 @@ export default function BrandsLogoSlider() {
           
           {/* Slider Container with Infinite Animation */}
           <div className="flex animate-marquee-infinite items-center gap-x-20 md:gap-x-32 lg:gap-x-32">
-            {[...clients, ...clients].map((client, index) => (
+            {clients?.map((client, index) => (
               <div 
                 key={`${client.name}-${index}`}
                 className="shrink-0 flex items-center justify-center group/item transition-all duration-500 ease-in-out"
@@ -85,7 +80,7 @@ export default function BrandsLogoSlider() {
                     src={client.src}
                     alt={client.alt}
                     className="object-contain w-full h-full transition-all duration-500 filter brightness-0 invert hover:brightness-100 hover:invert-0 cursor-pointer"
-                    sizes="(max-width: 780px) 192px, 256px"
+                    sizes="(max-width: 700px) 256px, 256px"
                     loading="lazy"
                     title={client.name}
                   />
@@ -102,38 +97,6 @@ export default function BrandsLogoSlider() {
             <div className="absolute left-0 top-1/2 -translate-y-1/2 w-16 h-16 bg-linear-to-l from-cyan-400/30 to-transparent rounded-full blur-xl" />
           </div>
         </div>
-
-        {/* Client count indicator */}
-        {/* <div className="flex justify-center mt-12">
-          <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/5 rounded-full border border-white/10 backdrop-blur-sm">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-              <span className="text-white text-sm font-medium">Featured Clients:</span>
-            </div>
-            <span className="text-white font-bold text-lg">{clients.length}+ Leading Brands</span>
-          </div>
-        </div> */}
-
-        {/* Stats section - Enhanced */}
-        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 max-w-4xl mx-auto">
-          <div className="text-center p-8 bg-linear-to-br from-blue-900/20 to-transparent rounded-2xl border border-blue-500/20 hover:border-blue-400/40 transition-all duration-300 hover:scale-105">
-            <div className="text-5xl md:text-6xl font-bold text-white mb-2">50+</div>
-            <div className="text-blue-200 font-semibold text-lg">Global Clients</div>
-            <div className="text-gray-300 text-sm mt-2">Across multiple industries</div>
-          </div>
-          
-          <div className="text-center p-8 bg-gradient-to-br from-purple-900/20 to-transparent rounded-2xl border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 hover:scale-105">
-            <div className="text-5xl md:text-6xl font-bold text-white mb-2">100%</div>
-            <div className="text-purple-200 font-semibold text-lg">Satisfaction Rate</div>
-            <div className="text-gray-300 text-sm mt-2">Consistent excellence</div>
-          </div>
-          
-          <div className="text-center p-8 bg-gradient-to-br from-cyan-900/20 to-transparent rounded-2xl border border-cyan-500/20 hover:border-cyan-400/40 transition-all duration-300 hover:scale-105">
-            <div className="text-5xl md:text-6xl font-bold text-white mb-2">24/7</div>
-            <div className="text-cyan-200 font-semibold text-lg">Dedicated Support</div>
-            <div className="text-gray-300 text-sm mt-2">Always available</div>
-          </div>
-        </div> */}
       </div>
 
       <style jsx global>{`
