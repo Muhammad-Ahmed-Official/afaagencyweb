@@ -29,7 +29,7 @@ const testimonials = [
     name: 'Abdul Ahad Noman', 
     role: 'Software Engineer at Quickpipe', 
     image: '../ceo4.jpeg', 
-    text: 'I had the opporotunity to work with AFA Innovations during a fast-paced project where i was reponsible for handling the development side. As the founder Farooq foucused on defining the project direction and keeping everything aligned with the overall vision'
+    text: 'I had the opporotunity to work with AFA Innovations during a fast-paced project where i was reponsible for handling the development side. AFA Innovations foucused on defining the project direction and keeping everything aligned with the overall vision'
   },
 ];
 
