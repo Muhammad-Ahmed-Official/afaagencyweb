@@ -26,7 +26,7 @@ const Section: React.FC = () => {
             {/* Enhanced stats section */}
             <div className="mt-10 grid grid-cols-2 gap-4">
               <div className="bg-linear-to-br from-blue-50 to-white p-5 rounded-2xl border border-blue-100 shadow-sm">
-                <div className="text-3xl font-bold text-black mb-1">12+</div>
+                <div className="text-3xl font-bold text-black mb-1">3+</div>
                 <div className="text-sm text-gray-700 font-medium">Years Experience</div>
                 <div className="mt-2 text-xs text-gray-500">Since 2012</div>
               </div>
@@ -79,7 +79,7 @@ const Section: React.FC = () => {
               <div className="relative pl-4 mb-10">
                 <div className="absolute left-0 top-0 bottom-0 w-1 bg-black rounded-full"></div>
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  From start-ups to enterprises, Appsians has helped businesses of all sizes turn their ideas into reality. 
+                  From start-ups to enterprises, AFA Innovations has helped businesses of all sizes turn their ideas into reality. 
                   With a focus on innovation, quality, and customer service, we're the software development partner 
                   you can trust to bring your project to life and help you reach your goals.
                 </p>
@@ -102,7 +102,7 @@ const Section: React.FC = () => {
                     // },
                     {
                       title: "Global Reach",
-                      desc: "Served clients in USA, UK, Germany, UAE, KSA, and 10+ countries"
+                      desc: "Served clients in USA, UK, Pakistan, Sweden"
                     },
                     {
                       title: "Enterprise Expertise",

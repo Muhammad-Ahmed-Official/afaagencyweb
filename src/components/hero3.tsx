@@ -30,7 +30,7 @@ const Hero3: React.FC = () => {
             <p 
               className="font-body text-[16px] md:text-[18px] text-white/90 leading-[1.8] max-w-162.5"
             >
-              We help brands achieve their goals through innovative and creative web and mobile applications, as well as digital marketing services.
+              We help brands achieve their goals through innovative and creative AI solutions, App solutions and Web solutions.
             </p>
           </div>
         </div>

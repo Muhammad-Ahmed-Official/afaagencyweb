@@ -10,7 +10,7 @@ const projects = [
   },
   {
     id: '02',
-    title: 'Stride.ai',
+    title: 'Trainetic.ai',
     category: 'AI FITNESS TRAINEER',
     image: 'img4.jpeg',
     link: 'https://stridefitness.framer.website',
@@ -18,21 +18,21 @@ const projects = [
   {
     id: '03',
     title: 'Amanah.ai',
-    category: 'Web Development',
+    category: 'AI Donnation PLatform',
     image: 'img2.jpeg',
     link: '#',
   },
   {
     id: '04',
     title: 'QUTFYT.ai',
-    category: 'Web Development',
+    category: 'AI Startup',
     image: 'img1.jpeg',
     link: '#',
   },
   {
     id: '05',
     title: 'Qadr.ai',
-    category: 'Web Development',
+    category: 'AI Startup',
     image: 'img5.jpeg',
     link: '#',
   },
@@ -42,6 +42,13 @@ const projects = [
     category: 'Web Development',
     image: 'img6.jpeg',
     link: 'Luverraltd.com',
+  },
+  {
+    id: '06',
+    title: 'Aizex',
+    category: 'Game Development',
+    image: 'img10.jpeg',
+    link: 'https://ahadazizjaffer2.github.io/AIZEX/',
   },
 ];
 
@@ -129,7 +136,7 @@ export default function PortfolioSection() {
                         href={project.link} 
                         className="inline-flex items-center gap-2 text-xs md:text-sm font-bold uppercase tracking-widest text-white/90 transition-all duration-300 group/btn hover:text-white hover:gap-3"
                       >
-                        <span className="text-[10px] md:text-xs">View project</span>
+                       {project.title === "Amanah.ai" || "QUTFYT.ai"? <span className="text-[10px] md:text-xs">Coimg soon</span> : <span className="text-[10px] md:text-xs">View project</span>}
                         <svg 
                           width="18" 
                           height="18" 

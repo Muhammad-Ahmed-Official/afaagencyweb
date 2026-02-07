@@ -3,9 +3,6 @@
 import { Instagram, Twitter, Linkedin, ArrowRight, MoveDown, Facebook } from 'lucide-react';
 import { motion } from "framer-motion";
 import { useEffect, useState } from 'react';
-{/* <h2 className="text-[60px] md:text-[85px] font-light leading-[1.1] tracking-tight text-white/90">
-              𝔼𝕩𝕡𝕖𝕣𝕚𝕖𝕟𝕔𝕖𝕤
-            </h2> */}
 
 const HeroSection = () => {
   return (
