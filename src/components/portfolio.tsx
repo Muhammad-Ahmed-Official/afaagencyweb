@@ -136,7 +136,7 @@ export default function PortfolioSection() {
                         href={project.link} 
                         className="inline-flex items-center gap-2 text-xs md:text-sm font-bold uppercase tracking-widest text-white/90 transition-all duration-300 group/btn hover:text-white hover:gap-3"
                       >
-                       {project.title === "Amanah.ai" || "QUTFYT.ai"? <span className="text-[10px] md:text-xs">Coimg soon</span> : <span className="text-[10px] md:text-xs">View project</span>}
+                       {project.title === "Amanah.ai" || "QUTFYT.ai"? <span className="text-[10px] md:text-xs">Coming soon</span> : <span className="text-[10px] md:text-xs">Let's click</span>}
                         <svg 
                           width="18" 
                           height="18" 

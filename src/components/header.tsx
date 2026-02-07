@@ -61,15 +61,25 @@ export default function Header() {
               </a>
             </div>
             <div className="header__action">
-              <a  href="/Contact" 
-                className="btn btn-style1 group relative flex items-center justify-center gap-2 px-5 py-3 border border-white rounded-[50px] text-white text-[15px] font-medium overflow-hidden transition-all duration-300">
-                <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-                
-                <span className="relative z-10 text-[14px] transition-colors duration-400 group-hover:text-black">
-                  Start a Project 
-                </span>
-                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+              <a
+                href={`https://wa.me/+923342865069?text=${encodeURIComponent(
+                  "Hello, I want to start a project!"
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button
+                  className="btn cursor-pointer btn-style1 group relative flex items-center justify-center gap-2 px-5 py-3 border border-white rounded-[50px] text-white text-[15px] font-medium overflow-hidden transition-all duration-300"
+                >
+                  <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+
+                  <span className="relative z-10 text-[14px] transition-colors duration-400 group-hover:text-black">
+                    Start a Project
+                  </span>
+                  <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                </button>
               </a>
+
             </div>
           </div>
 

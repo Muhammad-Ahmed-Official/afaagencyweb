@@ -22,7 +22,14 @@ const testimonials = [
     name: 'Beetoo', 
     role: 'Founder at Quickpipe', 
     image: '../ceo2.jpeg', 
-    text: 'AFA innovation played a key part in kickstarting QuickPipe Ai. The value of the work they produce for such an affordable price was great and although I was their first few clients and have to fix so much for me they still delivered the initial phases of my Ai platform. I’d recommend their services to others who are within SaaS or Ai platforms!Beetoo - founder at QuickPipe Ai'
+    text: 'AFA Innovation is a trustworthy and honest Startup whose commitment and dedication have no bounds. They will easily help you grow and support you as long you give him back the same'
+  },
+  { 
+    id: 4, 
+    name: 'Abdul Ahad Noman', 
+    role: 'Software Engineer at Quickpipe', 
+    image: '../ceo4.jpeg', 
+    text: 'I had the opporotunity to work with AFA Innovations during a fast-paced project where i was reponsible for handling the development side. As the founder Farooq foucused on defining the project direction and keeping everything aligned with the overall vision'
   },
 ];
 

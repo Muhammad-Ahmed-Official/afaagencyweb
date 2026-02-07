@@ -2,11 +2,11 @@
 
 import { useState, useRef } from 'react'
 
-const testimonials = [
+const teams = [
   {
     id: 1,
     name: 'Muhammad Farooq',
-    role: 'CEO And Founder Of AFA Innovations',
+    role: 'CEO And Co-Founder Of AFA Innovations',
     image: 'founder2.jpeg',
     text: "At AFA Innovations, we don’t just build AI products — we build intelligent solutions that solve real-world problems. Our vision is to push boundaries and redefine how technology empowers businesses.",
   },
@@ -33,27 +33,27 @@ const testimonials = [
   },
   {
     id: 5,
-    name: 'Zahid Rahi,',
+    name: 'Zahid Rahi',
     role: 'AI Engineer',
     image: 'teamM4.jpeg',
     text: "AI is not about replacing humans; it’s about enhancing intelligence. At AFA Innovations, we design models that learn, adapt, and deliver meaningful insights.",
   },
   {
-    id: 5,
+    id: 6,
     name: 'Daud Aman',
     role: 'AI Engineer',
     image: 'teamM3.jpeg',
     text: 'Our goal is to transform data into decisions. At AFA Innovations, we build AI systems that are accurate, ethical, and built for real-world use.',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Sana Ullah',
     role: 'CBO',
     image: 'teamM2.jpeg',
     text: "Technology creates value only when it solves business problems. At AFA Innovations, we align AI innovation with clear business outcomes and measurable growth",
   },
   {
-    id: 7,
+    id: 8,
     name: 'Asad Mehmood Anjum',
     role: 'Social Media Manager',
     image: 'teamM5.jpeg',
@@ -92,10 +92,10 @@ export default function Team() {
             <div
               ref={containerRef}
               className={`flex gap-6 md:gap-8 items-start ${
-                !isPaused ? 'animate-testimonials-marquee' : ''
-              }`}
+  !isPaused ? 'animate-testimonials-marquee' : ''
+}`}
             >
-              {[...testimonials, ...testimonials].map((testimonial, index) => (
+              {[...teams, ...teams].map((testimonial, index) => (
                 <div
                   key={`${testimonial.id}-${index}`}
                   className="shrink-0 w-[85vw] md:w-[40vw] lg:w-[35vw] xl:w-[30vw]"
@@ -144,7 +144,7 @@ export default function Team() {
       <style jsx global>{`
         @keyframes testimonials-marquee {
           0% {
-            transform: translateX(0);
+            transform: translateX(0%);
           }
           100% {
            transform: translateX(-100%);
@@ -152,7 +152,7 @@ export default function Team() {
         }
 
         .animate-testimonials-marquee {
-          animation: testimonials-marquee 40s linear infinite;
+          animation: testimonials-marquee 15s linear infinite;
         }
 
         .line-clamp-4 {
@@ -169,7 +169,7 @@ export default function Team() {
         /* Responsive adjustments */
         @media (max-width: 768px) {
           .animate-testimonials-marquee {
-            animation-duration: 35s;
+            animation-duration: 15s;
           }
         }
       `}</style>
