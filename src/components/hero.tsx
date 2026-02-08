@@ -51,7 +51,7 @@ Our approach replaces legacy friction with <strong className="text-white font-se
                 <span className="relative z-10 transition-colors duration-400 group-hover:text-black">
                   Get in Touch
                 </span>
-                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:text-black duration-300 group-hover:translate-x-1" />
               </a>
             </div>
             <div className="header__action">
@@ -62,7 +62,7 @@ Our approach replaces legacy friction with <strong className="text-white font-se
                 <span className="relative z-10 transition-colors duration-400 group-hover:text-black">
                   About Us
                 </span>
-                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:text-black   duration-300 group-hover:translate-x-1" />
               </a>
             </div>
           </div>

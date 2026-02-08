@@ -31,7 +31,7 @@ const Section: React.FC = () => {
                 <div className="mt-2 text-xs text-gray-500">Since 2012</div>
               </div>
               <div className="bg-linear-to-br from-blue-50 to-white p-5 rounded-2xl border border-blue-100 shadow-sm">
-                <div className="text-3xl font-bold text-black mb-1">500+</div>
+                <div className="text-3xl font-bold text-black mb-1">10+</div>
                 <div className="text-sm text-gray-700 font-medium">Projects Delivered</div>
                 <div className="mt-2 text-xs text-gray-500">97% Success Rate</div>
               </div>

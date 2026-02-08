@@ -57,7 +57,7 @@ export default function Header() {
                 <span className="relative z-10 text-[14px] transition-colors duration-400 group-hover:text-black">
                   Our Portfolio 
                 </span>
-                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:text-black duration-300 group-hover:translate-x-1" />
               </a>
             </div>
             <div className="header__action">
@@ -76,7 +76,7 @@ export default function Header() {
                   <span className="relative z-10 text-[14px] transition-colors duration-400 group-hover:text-black">
                     Start a Project
                   </span>
-                  <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:text-black duration-300 group-hover:translate-x-1" />
                 </button>
               </a>
 

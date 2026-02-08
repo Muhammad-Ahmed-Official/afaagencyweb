@@ -147,12 +147,13 @@ export default function Team() {
             transform: translateX(0%);
           }
           100% {
-           transform: translateX(-100%);
+            transform: translateX(-50%);
           }
         }
 
         .animate-testimonials-marquee {
           animation: testimonials-marquee 15s linear infinite;
+          width: max-content;
         }
 
         .line-clamp-4 {

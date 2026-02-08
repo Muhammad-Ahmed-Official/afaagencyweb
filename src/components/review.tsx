@@ -133,6 +133,7 @@ export default function Reviews() {
 
         .animate-testimonials-marquee {
           animation: testimonials-marquee 8s linear infinite;
+          width: max-content;
         }
 
         .line-clamp-4 {
