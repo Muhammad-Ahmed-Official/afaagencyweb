@@ -24,8 +24,8 @@ const AboutSection = () => {
                     blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-                    <span className="text-black font-bold text-lg">Mobile App Development</span>
-                    <span className="text-black/70 text-xs">Powerful mobile apps</span>
+                    <span className="text-white font-bold text-lg">Mobile App Development</span>
+                    <span className="text-white/70 text-xs">Powerful mobile apps</span>
                   </div>
                 </div>
               </div>
@@ -33,7 +33,7 @@ const AboutSection = () => {
               {/* Stacked Images 1 & 2 (Right) */}
               <div className="w-full sm:w-[55%] space-y-4">
                 {/* Image 1 */}
-                <div className="relative rounded-xl sm:rounded-[2rem] overflow-hidden shadow-2xl group border border-white/10 -translate-y-0 sm:-translate-y-5">
+                <div className="relative rounded-xl sm:rounded-[2rem] overflow-hidden shadow-2xl group border border-white/10 translate-y-0 sm:-translate-y-5">
                   <Image 
                     src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/loading-blog-8.gif"
                     alt="AI Solutions"
@@ -43,8 +43,8 @@ const AboutSection = () => {
                     className="w-full h-auto object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-                    <span className="text-black font-bold text-lg">AI Solutions</span>
-                    <span className="text-black/70 text-xs">Cutting-edge technology</span>
+                    <span className="text-white font-bold text-lg">AI Solutions</span>
+                    <span className="text-white/70 text-xs">Cutting-edge technology</span>
                   </div>
                 </div>
                 
@@ -59,8 +59,8 @@ const AboutSection = () => {
                     className="w-full h-auto object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-                    <span className="text-black font-bold text-lg">Web Development</span>
-                    <span className="text-black/70 text-xs">Custom web solutions</span>
+                    <span className="text-white font-bold text-lg">Web Development</span>
+                    <span className="text-white/70 text-xs">Custom web solutions</span>
                   </div>
                 </div>
               </div>

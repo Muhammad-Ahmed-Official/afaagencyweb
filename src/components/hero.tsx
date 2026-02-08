@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full min-h-[70vh] sm:min-h-[80vh] md:h-screen min-h-[600px] overflow-hidden bg-black flex items-center">
+    <section className="relative w-full sm:min-h-[80vh] md:h-screen min-h-[600px] overflow-hidden bg-black flex items-center">
       {/* Background Image / Fluid Art */}
       <div className="absolute inset-0 z-0 select-none">
         <img className="w-full h-full object-cover object-right lg:object-center opacity-80" sizes="100vw" src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2d3bbd90-100a-47bc-baf1-41d6af3aae13-appsians-com/assets/images/1633027720quinheader-13.webp" alt="" />
@@ -14,7 +14,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="max-w-4xl xl:max-w-[43rem] space-y-4 sm:space-y-6 md:space-y-8">
+        <div className="max-w-4xl xl:max-w-172 space-y-4 sm:space-y-6 md:space-y-8">
           {/* Headline Section */}
           <div className="animate-in fade-in slide-in-from-bottom-5 duration-1000">
             <motion.div
@@ -32,7 +32,7 @@ const HeroSection = () => {
 
           {/* Descriptive Text */}
           <div className="animate-in fade-in slide-in-from-bottom-7 duration-1000 delay-200">
-            <p className="text-sm sm:text-base md:text-[18px] text-[#B0B0B0] leading-[1.6] max-w-3xl lg:max-w-[40rem]">
+            <p className="text-sm sm:text-base md:text-[18px] text-[#B0B0B0] leading-[1.6] max-w-3xl lg:max-w-160">
               At <strong className="text-white font-semibold">AFA Innovations</strong>, we don’t just build software; we <strong className="text-white font-semibold">architect growth engines</strong>. 
 As the global AI market surges toward <strong className="text-white font-semibold">$376 billion in 2026</strong>, the gap between market leaders and the rest is defined by <strong className="text-white font-semibold">technical agility</strong>. 
 We empower your brand to bridge that gap by merging <strong className="text-white font-semibold">elite Web and Mobile Development</strong> with <strong className="text-white font-semibold">custom Applied AI Solutions</strong>. 

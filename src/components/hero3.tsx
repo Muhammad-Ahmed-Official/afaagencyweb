@@ -19,7 +19,7 @@ const Hero3: React.FC = () => {
 
       <div className="container relative z-10 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="max-w-2xl lg:max-w-[50rem]">
+          <div className="max-w-2xl lg:max-w-200">
             <h1 
               className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-white leading-[1.2] mb-2"
               style={{ letterSpacing: '-0.02em' }}
