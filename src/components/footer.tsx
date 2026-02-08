@@ -19,15 +19,15 @@ export default function Footer() {
         }}
       />
 
-      <div className="container relative z-10 mx-auto px-6 py-20 pb-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div className="container relative z-10 mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 pb-8 sm:pb-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-start">
           
           {/* Left Column: Let's get to work CTA */}
           <div className="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <span className="text-[12px] font-bold tracking-[3.6px] uppercase text-white mb-6 block">
+            <span className="text-[11px] sm:text-[12px] font-bold tracking-[3.6px] uppercase text-white mb-4 sm:mb-6 block">
               READY TO DO THIS
             </span>
-            <h2 className="text-[36px] md:text-[85px] font-extrabold leading-[1.1] mb-10 text-white">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-[85px] font-extrabold leading-[1.1] mb-6 sm:mb-10 text-white">
               Let&apos;s get to <br /> work
             </h2>
             <div className="header__action">
@@ -44,11 +44,11 @@ export default function Footer() {
           </div>
 
           {/* Right Columns: Links and Contact */}
-          <div className="lg:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-8 pt-16">
+          <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 pt-8 sm:pt-12 lg:pt-16">
             
             {/* Quick Links */}
             <div>
-              <h4 className="text-[24px] font-bold mb-8 relative inline-block group cursor-pointer">
+              <h4 className="text-xl sm:text-[22px] md:text-[24px] font-bold mb-6 sm:mb-8 relative inline-block group cursor-pointer">
                 Quick Links
                 <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-white/20 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
                 <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-linear-to-r from-blue-400 via-white to-blue-400 bg-size-[200%_100%] group-hover:w-full group-hover:animate-[gradientMove_3s_linear_infinite] transition-all duration-500 ease-out"></span>
@@ -70,7 +70,7 @@ export default function Footer() {
 
             {/* Say Hello / Contact */}
             <div>
-                <h4 className="text-[24px] font-bold mb-8 relative inline-block group cursor-pointer">
+                <h4 className="text-xl sm:text-[22px] md:text-[24px] font-bold mb-6 sm:mb-8 relative inline-block group cursor-pointer">
                   Say Hello
                   <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-white/20 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
                   <span className="absolute -bottom-2 left-0 w-8 h-0.5 bg-linear-to-r from-blue-400 via-white to-blue-400 bg-size-[200%_100%] group-hover:w-full group-hover:animate-[gradientMove_3s_linear_infinite] transition-all duration-500 ease-out"></span>
@@ -107,7 +107,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-24 pt-4 border-t border-white/10 justify-between text-center text-[14px] text-muted-foreground">
+        <div className="mt-12 sm:mt-16 md:mt-24 pt-4 border-t border-white/10 justify-between text-center text-xs sm:text-[14px] text-muted-foreground px-2">
           <p>© {currentYear}. All rights reserved by AFA Innovations.</p>
         </div>
       </div>

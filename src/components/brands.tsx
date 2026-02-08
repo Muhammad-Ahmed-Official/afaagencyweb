@@ -51,31 +51,31 @@ export default function BrandsLogoSlider() {
       <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Section Title - More visible */}
-        <div className="text-center mb-5">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-3 tracking-tight">
+        <div className="text-center mb-4 sm:mb-5">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-2 sm:mb-3 tracking-tight px-2">
             Trusted by Industry Leaders
           </h2>
-          <p className="text-gray-200 text-[14px] md:text-xl max-w-3xl mx-auto leading-relaxed">
+          <p className="text-gray-200 text-xs sm:text-sm md:text-base lg:text-xl max-w-3xl mx-auto leading-relaxed px-2">
             Partnering with innovative companies worldwide to deliver exceptional digital solutions
           </p>
         </div>
 
         {/* Main Slider Container - Increased contrast */}
-        <div className="relative group w-full overflow-hidden rounded-3xl bg-linear-to-br from-gray-900/80 to-black/90 border border-white/20 p-8 backdrop-blur-lg shadow-2xl shadow-blue-900/20">
+        <div className="relative group w-full overflow-hidden rounded-2xl sm:rounded-3xl bg-linear-to-br from-gray-900/80 to-black/90 border border-white/20 p-4 sm:p-6 md:p-8 backdrop-blur-lg shadow-2xl shadow-blue-900/20">
           {/* Glow effect */}
           <div className="absolute inset-0 bg-linear-to-r from-blue-500/10 via-purple-500/5 to-cyan-500/10 opacity-50 rounded-3xl" />
           
           {/* Slider Container with Infinite Animation */}
-          <div className="flex animate-marquee-infinite items-center gap-x-20 md:gap-x-32 lg:gap-x-32">
+          <div className="flex animate-marquee-infinite items-center gap-x-12 sm:gap-x-16 md:gap-x-20 lg:gap-x-32">
             {clients?.map((client, index) => (
               <div 
                 key={`${client.name}-${index}`}
                 className="shrink-0 flex items-center justify-center group/item transition-all duration-500 ease-in-out"
               >
                 {/* Logo container - Larger size and better contrast */}
-                <div className="relative w-48 h-20 md:w-52 md:h-24 lg:w-58 lg:h-28 p-6 bg-linear-to-br from-white/5 via-white/10 to-white/5 rounded-2xl border border-white/20 hover:border-white/40 transition-all duration-300 group-hover/item:scale-110 group-hover/item:shadow-2xl group-hover/item:shadow-white/20 group-hover/item:bg-white/15 backdrop-blur-sm">
+                <div className="relative w-28 h-12 sm:w-36 sm:h-14 md:w-48 md:h-20 lg:w-52 lg:h-24 xl:w-58 xl:h-28 p-3 sm:p-4 md:p-6 bg-linear-to-br from-white/5 via-white/10 to-white/5 rounded-xl sm:rounded-2xl border border-white/20 hover:border-white/40 transition-all duration-300 group-hover/item:scale-110 group-hover/item:shadow-2xl group-hover/item:shadow-white/20 group-hover/item:bg-white/15 backdrop-blur-sm">
                   <img
                     src={client.src}
                     alt={client.alt}
@@ -90,10 +90,10 @@ export default function BrandsLogoSlider() {
           </div>
 
           {/* Enhanced Gradient Fades with stronger contrast */}
-          <div className="absolute top-0 bottom-0 left-0 w-64 bg-linear-to-r from-black via-black/90 to-transparent z-20 pointer-events-none">
+          <div className="absolute top-0 bottom-0 left-0 w-16 sm:w-32 md:w-64 bg-linear-to-r from-black via-black/90 to-transparent z-20 pointer-events-none">
             <div className="absolute right-0 top-1/2 -translate-y-1/2 w-16 h-16 bg-linear-to-r from-blue-400/30 to-transparent rounded-full blur-xl" />
           </div>
-          <div className="absolute top-0 bottom-0 right-0 w-64 bg-linear-to-l from-black via-black/90 to-transparent z-20 pointer-events-none">
+          <div className="absolute top-0 bottom-0 right-0 w-16 sm:w-32 md:w-64 bg-linear-to-l from-black via-black/90 to-transparent z-20 pointer-events-none">
             <div className="absolute left-0 top-1/2 -translate-y-1/2 w-16 h-16 bg-linear-to-l from-cyan-400/30 to-transparent rounded-full blur-xl" />
           </div>
         </div>

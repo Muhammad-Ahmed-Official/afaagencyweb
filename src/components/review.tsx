@@ -38,17 +38,17 @@ export default function Reviews() {
   const [isPaused, setIsPaused] = useState(false)
 
   return (
-    <section className="relative  bg-white/90 py-10 overflow-hidden">
+    <section className="relative bg-white/90 py-8 sm:py-10 overflow-hidden">
       {/* Background Shape */}
       <div className="absolute top-0 left-0 w-1/2 h-full bg-linear-to-r from-emerald-50/30 to-transparent clip-path-polygon" />
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         {/* Header */}
-        <div className="mb-10 text-center">
-          <h3 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2">
+        <div className="mb-6 sm:mb-10 text-center">
+          <h3 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2 px-2">
             Our Clients
           </h3>
-          <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-2">
             They are just some of those who have trusted our services.
           </p>
         </div>
@@ -104,10 +104,10 @@ export default function Reviews() {
 
                       {/* Author Details */}
                       <div className="grow">
-                        <p className="font-bold text-gray-900 text-lg">
+                        <p className="font-bold text-gray-900 text-base sm:text-lg truncate">
                           {testimonial.name}
                         </p>
-                        <p className="text-black/70 font-semibold text-sm uppercase tracking-wider">
+                        <p className="text-black/70 font-semibold text-xs sm:text-sm uppercase tracking-wider line-clamp-2">
                           {testimonial.role}
                         </p>
                       </div>

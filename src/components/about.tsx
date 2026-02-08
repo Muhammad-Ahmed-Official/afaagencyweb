@@ -3,16 +3,16 @@ import Image from 'next/image';
 
 const AboutSection = () => {
   return (
-    <section className="bg-white py-10 overflow-hidden">
-      <div className="container mx-auto max-w-300 px-6">
-        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+    <section className="bg-white py-8 sm:py-10 overflow-hidden">
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="flex flex-col md:flex-row items-center gap-8 sm:gap-12 lg:gap-20">
           
           {/* Left Column: Image Layout */}
-          <div className="w-full md:w-1/2 relative">
-            <div className="flex gap-4">
-              {/* Image 3 (Large, Left) */}
-              <div className="w-[45%] mt-12 transform translate-y-8">
-                <div className="relative rounded-[2rem] overflow-hidden shadow-2xl group border border-white/10">
+          <div className="w-full md:w-1/2 relative order-2 md:order-1">
+            <div className="flex flex-col sm:flex-row gap-4">
+              {/* Image 3 (Large, Left) - on mobile full width */}
+              <div className="w-full sm:w-[45%] mt-0 sm:mt-12 transform sm:translate-y-8">
+                <div className="relative rounded-xl sm:rounded-[2rem] overflow-hidden shadow-2xl group border border-white/10">
                   <Image 
                     src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/loading-blog-8.gif"
                     alt="Mobile App Development"
@@ -31,9 +31,9 @@ const AboutSection = () => {
               </div>
 
               {/* Stacked Images 1 & 2 (Right) */}
-              <div className="w-[55%] space-y-4">
+              <div className="w-full sm:w-[55%] space-y-4">
                 {/* Image 1 */}
-                <div className="relative rounded-[2rem] overflow-hidden shadow-2xl group border border-white/10 -translate-y-5">
+                <div className="relative rounded-xl sm:rounded-[2rem] overflow-hidden shadow-2xl group border border-white/10 -translate-y-0 sm:-translate-y-5">
                   <Image 
                     src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/loading-blog-8.gif"
                     alt="AI Solutions"
@@ -49,7 +49,7 @@ const AboutSection = () => {
                 </div>
                 
                 {/* Image 2 */}
-                <div className="relative rounded-[2rem] overflow-hidden shadow-2xl group border border-white/10 transform translate-x-4">
+                <div className="relative rounded-xl sm:rounded-[2rem] overflow-hidden shadow-2xl group border border-white/10 transform translate-x-0 sm:translate-x-4">
                   <Image 
                     src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/56dcea0a-fa58-4f5a-aee8-5893b3f5c371-appsians-com/assets/images/loading-blog-8.gif"
                     alt="Web Development"
@@ -66,25 +66,25 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* Experience Badge */}
-            <div className="absolute -bottom-10 left-0 bg-transparent flex items-baseline gap-4 pointer-events-none">
-              <span className="text-[120px] font-extrabold leading-none text-black opacity-20 select-none">3</span>
-              <div className="mb-6">
-                <p className="text-black font-bold tracking-widest text-sm leading-tight">YEARS OF</p>
-                <p className="text-black font-bold tracking-widest text-sm leading-tight">EXPERIENCE</p>
+            {/* Experience Badge - responsive size */}
+            <div className="absolute -bottom-4 sm:-bottom-10 left-0 bg-transparent flex items-baseline gap-2 sm:gap-4 pointer-events-none">
+              <span className="text-5xl sm:text-7xl md:text-8xl lg:text-[120px] font-extrabold leading-none text-black opacity-20 select-none">3</span>
+              <div className="mb-2 sm:mb-6">
+                <p className="text-black font-bold tracking-widest text-[10px] sm:text-xs md:text-sm leading-tight">YEARS OF</p>
+                <p className="text-black font-bold tracking-widest text-[10px] sm:text-xs md:text-sm leading-tight">EXPERIENCE</p>
               </div>
             </div>
           </div>
 
           {/* Right Column: Text Content */}
-         <div className="w-full md:w-1/2">
+         <div className="w-full md:w-1/2 order-1 md:order-2">
   {/* Small top spacing for overall balance */}
-  <div className="mb-6">
-    <h4 className="text-[22px] font-semibold text-black mb-2">
+  <div className="mb-4 sm:mb-6">
+    <h4 className="text-lg sm:text-[20px] md:text-[22px] font-semibold text-black mb-2">
       Trust the Elite – Trust AFA Innovations. Architecting the Future of Digital Reality.
     </h4>
     
-    <h3 className="text-[32px] md:text-[36px] font-bold text-black mb-4 leading-tight">
+    <h3 className="text-2xl sm:text-[28px] md:text-[36px] font-bold text-black mb-4 leading-tight">
       The AFA Innovations Standard: <span className="text-black underline decoration-white/20">Global Engineering, Proven Growth</span>
     </h3>
     
@@ -109,7 +109,7 @@ const AboutSection = () => {
     ))}
   </ul>
 
-  <div className="header__action w-56">
+  <div className="header__action w-full sm:w-56">
     <a  href="/Contact" 
       className="btn btn-style1 group relative flex items-center justify-center gap-2 px-5 py-3 border border-black rounded-[50px] text-black text-[15px] font-medium overflow-hidden transition-all duration-300">
       <span className="absolute inset-0 bg-black -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>

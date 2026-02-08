@@ -2,9 +2,9 @@ import React from 'react';
 
 const Section: React.FC = () => {
   return (
-    <section className="about-us light-section bg-white text-[#1a1a1a] py-16 md:py-28">
+    <section className="about-us light-section bg-white text-[#1a1a1a] py-10 sm:py-16 md:py-28">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
+        <div className="flex flex-col lg:flex-row items-start gap-8 sm:gap-12 lg:gap-20">
           {/* Left Column: Image with stats - Slightly wider */}
           <div className="w-full lg:w-[48%]">
             <div className="relative overflow-hidden rounded-2xl lg:rounded-3xl shadow-2xl shadow-gray-200/50 group">

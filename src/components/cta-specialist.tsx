@@ -62,11 +62,11 @@ const TypedCTA: React.FC = () => {
       <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
 
-      <div className="container mx-auto max-w-285 px-6">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
-          <div className="flex-1">
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 sm:gap-8">
+          <div className="flex-1 min-w-0">
             <h4 
-              className="parent-typed-text text-white text-[24px] sm:text-[28px] md:text-[36px] font-semibold leading-[1.3] m-0"
+              className="parent-typed-text text-white text-lg sm:text-xl md:text-[28px] lg:text-[36px] font-semibold leading-[1.3] m-0"
               style={{ fontFamily: 'var(--font-sans)', letterSpacing: '-0.01em' }}
             >
               <span className="mt_typed-beforetext">Are you looking for </span>

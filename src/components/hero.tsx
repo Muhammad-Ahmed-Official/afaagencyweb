@@ -6,15 +6,15 @@ import { useEffect, useState } from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-screen min-h-200 overflow-hidden bg-black flex items-center">
+    <section className="relative w-full min-h-[70vh] sm:min-h-[80vh] md:h-screen min-h-[600px] overflow-hidden bg-black flex items-center">
       {/* Background Image / Fluid Art */}
       <div className="absolute inset-0 z-0 select-none">
-        <img className="object-cover object-right lg:object-center opacity-80" sizes="100vw" src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2d3bbd90-100a-47bc-baf1-41d6af3aae13-appsians-com/assets/images/1633027720quinheader-13.webp" alt="" />
+        <img className="w-full h-full object-cover object-right lg:object-center opacity-80" sizes="100vw" src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/2d3bbd90-100a-47bc-baf1-41d6af3aae13-appsians-com/assets/images/1633027720quinheader-13.webp" alt="" />
         <div className="absolute inset-0 bg-[#00000000]" />
       </div>
 
-      <div className="container relative z-10 px-6 lg:px-12 mx-auto">
-        <div className="max-w-175 space-y-8">
+      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-12">
+        <div className="max-w-4xl xl:max-w-[43rem] space-y-4 sm:space-y-6 md:space-y-8">
           {/* Headline Section */}
           <div className="animate-in fade-in slide-in-from-bottom-5 duration-1000">
             <motion.div
@@ -32,7 +32,7 @@ const HeroSection = () => {
 
           {/* Descriptive Text */}
           <div className="animate-in fade-in slide-in-from-bottom-7 duration-1000 delay-200">
-            <p className="text-[16px] md:text-[18px] text-[#B0B0B0] leading-[1.6] max-w-160">
+            <p className="text-sm sm:text-base md:text-[18px] text-[#B0B0B0] leading-[1.6] max-w-3xl lg:max-w-[40rem]">
               At <strong className="text-white font-semibold">AFA Innovations</strong>, we don’t just build software; we <strong className="text-white font-semibold">architect growth engines</strong>. 
 As the global AI market surges toward <strong className="text-white font-semibold">$376 billion in 2026</strong>, the gap between market leaders and the rest is defined by <strong className="text-white font-semibold">technical agility</strong>. 
 We empower your brand to bridge that gap by merging <strong className="text-white font-semibold">elite Web and Mobile Development</strong> with <strong className="text-white font-semibold">custom Applied AI Solutions</strong>. 
@@ -70,8 +70,8 @@ Our approach replaces legacy friction with <strong className="text-white font-se
       </div>
 
       {/* Side Social Media Links */}
-      <div className="absolute left-22 bottom-10 hidden lg:block z-20 animate-in fade-in duration-1000 delay-700">
-        <ul className="flex gap-6">
+      <div className="absolute left-4 sm:left-6 lg:left-22 bottom-6 lg:bottom-10 z-20 animate-in fade-in duration-1000 delay-700">
+        <ul className="flex gap-3 lg:gap-6">
           <li className='border border-white rounded-full p-2'>
             <a 
               href="https://www.instagram.com/afa_innovations?igsh=MWVwbW1qOHZkOGJjag==" 
@@ -109,7 +109,7 @@ Our approach replaces legacy friction with <strong className="text-white font-se
       </div>
 
       {/* Scroll Down Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce cursor-pointer">
+      <div className="absolute bottom-4 sm:bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce cursor-pointer">
         <a href="#clients-section" className="text-white/40 hover:text-white transition-colors">
           <MoveDown className="w-6 h-6" />
         </a>

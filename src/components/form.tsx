@@ -35,20 +35,20 @@ export default function Form() {
   }
 
   return (
-    <section className="iframe-contact py-25 bg-linear-to-r from-[#0d1630] via-[#06080f]">
-      <div className="container mx-auto max-w-350 px-6">
-        <div className="flex flex-col md:flex-row gap-8 lg:gap-12">
+    <section className="iframe-contact py-12 sm:py-16 md:py-25 bg-linear-to-r from-[#0d1630] via-[#06080f]">
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="flex flex-col md:flex-row gap-6 sm:gap-8 lg:gap-12">
           {/* Map Column */}
-          <div className="w-full md:w-1/2">
-            <h3 className="text-3xl font-semibold leading-[1.4] text-white mb-6.25">
+          <div className="w-full md:w-1/2 order-2 md:order-1">
+            <h3 className="text-2xl sm:text-3xl font-semibold leading-[1.4] text-white mb-4 sm:mb-6">
              𝗪𝗵𝗲𝗿𝗲 𝘄𝗲 𝗮𝗿𝗲
             </h3>
-            <div className="rounded-[5px] overflow-hidden border border-chart-4">
+            <div className="rounded-[5px] overflow-hidden border border-chart-4 h-[260px] sm:h-[320px] md:h-[400px] lg:h-[450px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4681.733871427174!2d-106.95751588692308!3d44.79795157095024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5335fabe8182314f%3A0x16eb18eacf1e0aff!2s30%20N%20Gould%20St%20ste%20r%2C%20Sheridan%2C%20WY%2082801%2C%20USA!5e1!3m2!1sen!2s!4v1764024355435!5m2!1sen!2s"
                 width="100%"
-                height="450"
-                style={{ border: 0, filter: "grayscale(100%) invert(90%) contrast(100%)" }}
+                height="100%"
+                style={{ border: 0, filter: "grayscale(100%) invert(90%) contrast(100%)", minHeight: '260px' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -58,12 +58,12 @@ export default function Form() {
           </div>
 
           {/* Form Column */}
-          <div className="w-full md:w-1/2">
-            <h3 className="text-3xl font-semibold leading-[1.4] text-white mb-6.25">
+          <div className="w-full md:w-1/2 order-1 md:order-2">
+            <h3 className="text-2xl sm:text-3xl font-semibold leading-[1.4] text-white mb-4 sm:mb-6">
               𝚂𝚎𝚗𝚍 𝚞𝚜 𝚖𝚎𝚜𝚜𝚊𝚐𝚎
             </h3>
              <form
-      className="space-y-4 border border-[#ffffff57] rounded-2xl p-5"
+      className="space-y-4 border border-[#ffffff57] rounded-xl sm:rounded-2xl p-4 sm:p-5"
       onSubmit={handleSubmit}
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

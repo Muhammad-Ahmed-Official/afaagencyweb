@@ -6,7 +6,7 @@ const Hero3: React.FC = () => {
 
   return (
     <section 
-      className="relative min-h-screen w-full flex items-center overflow-hidden bg-black"
+      className="relative min-h-[500px] sm:min-h-[70vh] md:min-h-[85vh] w-full flex items-center overflow-hidden bg-black"
       style={{
         backgroundImage: `url(${bgImageUrl})`,
         backgroundSize: 'cover',
@@ -17,18 +17,18 @@ const Hero3: React.FC = () => {
       {/* Overlay for readability if image is too bright, though the theme is dark */}
       <div className="absolute inset-0 bg-[#00000000] z-0" />
 
-      <div className="container relative z-10">
-        <div className="max-w-285 mx-auto">
-          <div className="max-w-200">
+      <div className="container relative z-10 px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-2xl lg:max-w-[50rem]">
             <h1 
-              className="font-display text-[48px] md:text-9xl font-bold text-white leading-[1.2] mb-2"
+              className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-white leading-[1.2] mb-2"
               style={{ letterSpacing: '-0.02em' }}
             >
               About 
             </h1>
-            <h2 className="font-display font-bold text-[48px] md:text-8xl text-outline mb-3"> the company </h2>
+            <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-outline mb-3"> the company </h2>
             <p 
-              className="font-body text-[16px] md:text-[18px] text-white/90 leading-[1.8] max-w-162.5"
+              className="font-body text-sm sm:text-base md:text-[18px] text-white/90 leading-[1.8] max-w-xl"
             >
               We help brands achieve their goals through innovative and creative AI solutions, App solutions and Web solutions.
             </p>
@@ -36,8 +36,8 @@ const Hero3: React.FC = () => {
         </div>
       </div>
 
-      {/* Social Sidebar - Absolute Positioned on the left side of the screen per screenshot */}
-      <div className="absolute left-22 bottom-10 hidden lg:block z-20 animate-in fade-in duration-1000 delay-700">
+      {/* Social Sidebar - Absolute Positioned on the left side of the screen */}
+      <div className="absolute left-4 sm:left-6 lg:left-22 bottom-6 lg:bottom-10 z-20 animate-in fade-in duration-1000 delay-700">
         <ul className="flex gap-6">
           <li className='border border-white rounded-full p-2'>
             <a 
@@ -76,7 +76,7 @@ const Hero3: React.FC = () => {
       </div>
 
       {/* Scroll Down Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce cursor-pointer">
+      <div className="absolute bottom-4 sm:bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce cursor-pointer">
         <a href="#clients-section" className="text-white/40 hover:text-white transition-colors">
           <MoveDown className="w-6 h-6" />
         </a>

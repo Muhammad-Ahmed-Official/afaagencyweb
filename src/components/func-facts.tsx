@@ -7,7 +7,7 @@ const FunFactsSection = () => {
   return (
     <section 
       id="fun-facts" 
-      className="fun-facts-section relative bg-white/90 overflow-hidden py-10">
+      className="fun-facts-section relative bg-white/90 overflow-hidden py-8 sm:py-10">
             {/* <div className="absolute inset-0 bg-linear-to-br from-blue-900/10 via-purple-900/5 to-cyan-900/10" />
       
       <div className="absolute inset-0 opacity-5">
@@ -20,13 +20,13 @@ const FunFactsSection = () => {
       <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
 
-      <div className="container px-6 max-w-300">
+      <div className="container px-4 sm:px-6 max-w-6xl">
         {/* Section Header */}
-        <div className="mb-4">
-          <h3 className="text-3xl md:text-[48px] font-bold leading-[1.2] text-black mb-2 text-center">
+        <div className="mb-6 sm:mb-8">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-bold leading-[1.2] text-black mb-2 text-center">
             Fun Facts
           </h3>
-          <p className="text-[14px] md:text-[18px] font-normal leading-[1.6] md:mx-auto text-justify text-black/90 max-w-210">
+          <p className="text-sm sm:text-base md:text-[18px] font-normal leading-[1.6] md:mx-auto text-justify text-black/90 max-w-4xl mx-auto">
             The <strong>Growth-Centric</strong>  Version (Focus on Scalability)
 The <strong>AFA</strong>Track Record Our history is marked by high-velocity growth and engineered excellence. Having successfully navigated the digital landscape for over a decade, we’ve transformed the way brands operate. These achievements fuel our commitment to pushing the boundaries of Applied AI and Web Architecture, constantly refining our services to help you capture your share of the global digital market.
           </p>
@@ -108,59 +108,55 @@ function Stats() {
   }, [])
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-center">
       {/* Happy Customers */}
-      <div className="radial flex flex-col items-center justify-center p-5 transition-transform duration-300 hover:-translate-y-1.25 hover:shadow-xl hover:shadow-blue-500/20">
-        <div className="radial-icon mb-3 text-black">
-          <Smile size={45} strokeWidth={1} className="opacity-80" />
+      <div className="radial flex flex-col items-center justify-center p-3 sm:p-5 transition-transform duration-300 hover:-translate-y-1.25 hover:shadow-xl hover:shadow-blue-500/20">
+        <div className="radial-icon mb-2 sm:mb-3 text-black flex justify-center">
+          <Smile className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 opacity-80" strokeWidth={1} />
         </div>
-        <span className="timer text-4xl md:text-[60px] font-extrabold leading-[1.1] text-black block mb-2">
+        <span className="timer text-2xl sm:text-3xl md:text-4xl lg:text-[60px] font-extrabold leading-[1.1] text-black block mb-1 sm:mb-2">
           {happyCustomers}
-          {/* <span className="text-blue-400 ml-1">+</span> */}
         </span>
-        <h4 className="text-[24px] font-semibold leading-[1.4] text-black">
+        <h4 className="text-sm sm:text-base md:text-lg lg:text-[24px] font-semibold leading-[1.4] text-black">
           Happy Customers
         </h4>
       </div>
 
       {/* Countries */}
-      <div className="radial flex flex-col items-center justify-center p-5 transition-transform duration-300 hover:-translate-y-1.25 hover:shadow-xl hover:shadow-blue-500/20">
-        <div className="radial-icon mb-3 text-black">
-          <Coffee size={45} strokeWidth={1} className="opacity-80" />
+      <div className="radial flex flex-col items-center justify-center p-3 sm:p-5 transition-transform duration-300 hover:-translate-y-1.25 hover:shadow-xl hover:shadow-blue-500/20">
+        <div className="radial-icon mb-2 sm:mb-3 text-black flex justify-center">
+          <Coffee className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 opacity-80" strokeWidth={1} />
         </div>
-        <span className="timer text-4xl md:text-[60px] font-extrabold leading-[1.1] text-black block mb-2">
+        <span className="timer text-2xl sm:text-3xl md:text-4xl lg:text-[60px] font-extrabold leading-[1.1] text-black block mb-1 sm:mb-2">
           {countries}
-          {/* <span className="text-blue-400 ml-1">+</span> */}
         </span>
-        <h4 className="text-[24px] font-semibold leading-[1.4] text-black">
+        <h4 className="text-sm sm:text-base md:text-lg lg:text-[24px] font-semibold leading-[1.4] text-black">
           Countries
         </h4>
       </div>
 
       {/* Innovations */}
-      <div className="radial flex flex-col items-center justify-center p-5 transition-transform duration-300 hover:-translate-y-1.25 hover:shadow-xl hover:shadow-blue-500/20">
-        <div className="radial-icon mb-3 text-black">
-          <Lightbulb size={45} strokeWidth={1} className="opacity-80" />
+      <div className="radial flex flex-col items-center justify-center p-3 sm:p-5 transition-transform duration-300 hover:-translate-y-1.25 hover:shadow-xl hover:shadow-blue-500/20">
+        <div className="radial-icon mb-2 sm:mb-3 text-black flex justify-center">
+          <Lightbulb className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 opacity-80" strokeWidth={1} />
         </div>
-        <span className="timer text-4xl md:text-[60px]  font-extrabold leading-[1.1] text-black block mb-2">
+        <span className="timer text-2xl sm:text-3xl md:text-4xl lg:text-[60px] font-extrabold leading-[1.1] text-black block mb-1 sm:mb-2">
           {innovations}
-          {/* <span className="text-blue-400 ml-1">+</span> */}
         </span>
-        <h4 className="text-[24px] font-semibold leading-[1.4] text-black">
+        <h4 className="text-sm sm:text-base md:text-lg lg:text-[24px] font-semibold leading-[1.4] text-black">
           Innovations
         </h4>
       </div>
 
       {/* Great Projects */}
-      <div className="radial flex flex-col items-center justify-center p-5 transition-transform duration-300 hover:-translate-y-1.25 hover:shadow-xl hover:shadow-blue-500/20">
-        <div className="radial-icon mb-3 text-black">
-          <Briefcase size={45} strokeWidth={1} className="opacity-80" />
+      <div className="radial flex flex-col items-center justify-center p-3 sm:p-5 transition-transform duration-300 hover:-translate-y-1.25 hover:shadow-xl hover:shadow-blue-500/20">
+        <div className="radial-icon mb-2 sm:mb-3 text-black flex justify-center">
+          <Briefcase className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 opacity-80" strokeWidth={1} />
         </div>
-        <span className="timer text-4xl md:text-[60px] font-extrabold leading-[1.1] text-black block mb-2">
+        <span className="timer text-2xl sm:text-3xl md:text-4xl lg:text-[60px] font-extrabold leading-[1.1] text-black block mb-1 sm:mb-2">
           {greatProjects}
-          {/* <span className="text-blue-400 ml-1">+</span> */}
         </span>
-        <h4 className="text-[24px] font-semibold leading-[1.4] text-black">
+        <h4 className="text-sm sm:text-base md:text-lg lg:text-[24px] font-semibold leading-[1.4] text-black">
           Great Projects
         </h4>
       </div>

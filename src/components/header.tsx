@@ -33,7 +33,7 @@ export default function Header() {
           isScrolled ? 'bg-black/90 py-2' : 'bg-transparent pb-11 pt-2'
         }`}
       >
-        <div className="flex items-center justify-between px-6 lg:px-12.5 max-w-480 mx-auto">
+        <div className="flex items-center justify-between w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           {/* Logo Section */}
           <div className="flex items-center">
             <a href="/" className="block">
@@ -47,17 +47,16 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Actions Section (Desktop) */}
-          <div className="hidden md:flex items-center gap-4">
-            <div className="header__action">
+          {/* Actions Section - responsive: stack or hide text on small screens */}
+          <div className="flex items-center gap-2 sm:gap-4">
+            <div className="header__action hidden sm:block">
               <a  href="#portfolio" 
-                className="btn btn-style1 group relative flex items-center justify-center gap-2 px-5 py-3 border border-white rounded-[50px] text-white text-[15px] font-medium overflow-hidden transition-all duration-300">
+                className="btn btn-style1 group relative flex items-center justify-center gap-2 px-3 py-2.5 sm:px-5 sm:py-3 border border-white rounded-[50px] text-white text-[13px] sm:text-[15px] font-medium overflow-hidden transition-all duration-300">
                 <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-                
-                <span className="relative z-10 text-[14px] transition-colors duration-400 group-hover:text-black">
+                <span className="relative z-10 transition-colors duration-400 group-hover:text-black whitespace-nowrap">
                   Our Portfolio 
                 </span>
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:text-black duration-300 group-hover:translate-x-1" />
+                <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform group-hover:text-black duration-300 group-hover:translate-x-1 shrink-0" />
               </a>
             </div>
             <div className="header__action">
@@ -69,17 +68,15 @@ export default function Header() {
                 rel="noopener noreferrer"
               >
                 <button
-                  className="btn cursor-pointer btn-style1 group relative flex items-center justify-center gap-2 px-5 py-3 border border-white rounded-[50px] text-white text-[15px] font-medium overflow-hidden transition-all duration-300"
+                  className="btn cursor-pointer btn-style1 group relative flex items-center justify-center gap-2 px-3 py-2.5 sm:px-5 sm:py-3 border border-white rounded-[50px] text-white text-[13px] sm:text-[15px] font-medium overflow-hidden transition-all duration-300"
                 >
                   <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
-
-                  <span className="relative z-10 text-[14px] transition-colors duration-400 group-hover:text-black">
+                  <span className="relative z-10 transition-colors duration-400 group-hover:text-black whitespace-nowrap">
                     Start a Project
                   </span>
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:text-black duration-300 group-hover:translate-x-1" />
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform group-hover:text-black duration-300 group-hover:translate-x-1 shrink-0" />
                 </button>
               </a>
-
             </div>
           </div>
 
